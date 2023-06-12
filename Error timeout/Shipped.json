@@ -1,0 +1,15 @@
+{
+    
+    "shippingDetails": [
+        {
+            "shippingId": "az-1001",
+            "accountId": 1001,
+            "netAmount": 435
+        },
+        {
+            "shippingId": "az-1002",
+            "accountId": 1002,
+            "netAmount": 500
+        }
+    ]
+}

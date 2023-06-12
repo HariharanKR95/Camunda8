@@ -1,0 +1,15 @@
+{
+    
+    "transactions": [
+        { 
+            "transactionDescription": "Sold Apple shares",
+            "accountId": 1001,
+            "symbol": "AAPL"
+        },
+        {
+            "transactionDescription": "Sold Apple shares",
+            "accountId": 1002,
+            "symbol": "AAPL"
+        }
+    ]
+}

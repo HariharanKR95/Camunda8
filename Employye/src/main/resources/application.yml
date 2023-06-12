@@ -1,0 +1,52 @@
+server:
+  port: 9191
+  ssl:
+    enabled: true
+    keyStoreType: PKCS12
+    key-store: file:///D:/Certs/wildcard_dev_wedbush_com.pfx
+    key-store-password: WildDPPUCert@2022
+  http:
+    port: 9392
+    
+#    key-store: classpath:camunda.pfx    
+#key-store: file:///C:/Users/PujariA/Desktop/camunda.pfx
+#key-store: file:///E:/SSLCertificates/wildcard_uat_wedbush_com.pfx
+      
+#      java -jar -Dspring.profiles.active=dev camunda-0.0.1-SNAPSHOT.jar
+      
+camunda-householdsummary-timeout-param : 160000
+#spring:
+#  cloud:
+#    azure:
+#      active-directory:
+#        b2c:
+#          jwt-read-timeout : 50000
+#          enabled: true
+#          profile:
+#            tenant-id: e57f4bd7-9c8b-45b7-bcf3-82a66dc3944d
+#          credential:
+##            client-id: 24bc7496-c720-4ba9-a951-8535304cdaed
+#            client-id: 55e201d8-e7d8-4c6e-af36-1b309097a46d
+##            client-secret: ABX8Q~.6h6C9dBOVYVY5fa-3NXoQncRUfsGwqdln
+#          base-uri: https://wedbushclientsdev.b2clogin.com/wedbushclientsdev.onmicrosoft.com/
+#          user-flows :
+#            sign-up-or-sign-in : B2C_1A_SUSI_USERNAME
+          
+
+
+
+zeebe:
+  broker:
+    gateway:
+      # Enable the embedded gateway to start on broker startup.
+      # This setting can also be overridden using the environment variable ZEEBE_BROKER_GATEWAY_ENABLE.
+      enable: true
+  
+zeebe.client.security.plaintext: true
+zeebe.client.worker.threads: 500
+
+
+
+
+#service portal urls
+

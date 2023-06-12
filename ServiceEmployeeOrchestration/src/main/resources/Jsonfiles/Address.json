@@ -1,0 +1,24 @@
+{
+    "address": [
+        {
+            "id": 101,
+            "state": "TamilNadu",
+            "city": "Krishnagiri"
+        },
+        {
+            "id": 102,
+            "state": "TamilNadu",
+            "city": "Tenkasi"
+        },
+        {
+            "id": 103,
+            "state": "Kerala",
+            "city": "Wayanad"
+        },
+        {
+            "id": 104,
+            "state": "Maharasthra",
+            "city": "Pune"
+        }
+    ]
+}

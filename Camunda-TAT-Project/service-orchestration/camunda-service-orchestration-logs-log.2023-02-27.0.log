@@ -1,0 +1,877 @@
+2022-12-15 17:51:44 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.2 on STS-CHN-010 with PID 464 (D:\STS-WORKSPACE\Camunda-Poc\Camunda-User task\target\classes started by STS130 in D:\STS-WORKSPACE\Camunda-Poc\Camunda-User task)
+2022-12-15 17:51:44 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2022-12-15 17:51:47 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2022-12-15 17:51:47 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2022-12-15 17:51:47 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-15 17:51:47 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-12-15 17:51:47 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-15 17:51:47 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2942 ms
+2022-12-15 17:51:49 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2022-12-15 17:51:49 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7777 (http) with context path ''
+2022-12-15 17:51:49 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Started SpringElasticSearchApplication in 6.168 seconds (JVM running for 7.219)
+2022-12-15 17:57:48 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.2 on STS-CHN-010 with PID 25644 (D:\STS-WORKSPACE\Camunda-Poc\Camunda-User task\target\classes started by STS130 in D:\STS-WORKSPACE\Camunda-Poc\Camunda-User task)
+2022-12-15 17:57:48 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2022-12-15 17:57:50 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2022-12-15 17:57:50 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2022-12-15 17:57:50 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-15 17:57:50 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-12-15 17:57:50 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-15 17:57:50 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2711 ms
+2022-12-15 17:57:52 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2022-12-15 17:57:52 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7777 (http) with context path ''
+2022-12-15 17:57:52 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Started SpringElasticSearchApplication in 5.934 seconds (JVM running for 6.956)
+2022-12-15 17:58:16 INFO  [http-nio-7777-exec-2].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 17:58:16 INFO  [http-nio-7777-exec-2].[].[].[] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-15 17:58:16 INFO  [http-nio-7777-exec-2].[].[].[] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-12-15 17:58:16 ERROR [http-nio-7777-exec-2].[].[].[] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "io.camunda.zeebe.client.ZeebeClient.newCreateInstanceCommand()" because "this.zeebeClient" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "io.camunda.zeebe.client.ZeebeClient.newCreateInstanceCommand()" because "this.zeebeClient" is null
+	at com.example.Spring.elasticsearch.controller.ElasticdemoController.demo(ElasticdemoController.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-12-15 17:59:48 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.2 on STS-CHN-010 with PID 24940 (D:\STS-WORKSPACE\Camunda-Poc\Camunda-User task\target\classes started by STS130 in D:\STS-WORKSPACE\Camunda-Poc\Camunda-User task)
+2022-12-15 17:59:48 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2022-12-15 17:59:50 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2022-12-15 17:59:50 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2022-12-15 17:59:50 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-15 17:59:50 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-12-15 17:59:51 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-15 17:59:51 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2609 ms
+2022-12-15 17:59:51 WARN  [main].[].[].[] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'emailWorker': Unsatisfied dependency expressed through field 'zeebeClient'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'io.camunda.zeebe.client.ZeebeClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-12-15 17:59:51 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-12-15 17:59:51 INFO  [main].[].[].[] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-15 17:59:51 ERROR [main].[].[].[] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field zeebeClient in com.example.Spring.elasticsearch.model.EmailWorker required a bean of type 'io.camunda.zeebe.client.ZeebeClient' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'io.camunda.zeebe.client.ZeebeClient' in your configuration.
+
+2022-12-15 18:01:41 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.2 on STS-CHN-010 with PID 11976 (D:\STS-WORKSPACE\Camunda-Poc\Camunda-User task\target\classes started by STS130 in D:\STS-WORKSPACE\Camunda-Poc\Camunda-User task)
+2022-12-15 18:01:41 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2022-12-15 18:01:42 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration' of type [io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:01:42 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:01:42 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeExpressionResolver' of type [io.camunda.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:01:42 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeDeploymentValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:01:42 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deploymentPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeDeploymentAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:01:42 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeWorkerValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:01:42 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration' of type [io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:01:42 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commandExceptionHandlingStrategy' of type [io.camunda.zeebe.spring.client.jobhandling.DefaultCommandExceptionHandlingStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:01:42 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'backoffSupplier' of type [io.camunda.zeebe.client.impl.worker.ExponentialBackoff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:01:43 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeWorkerPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeWorkerAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:01:44 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2022-12-15 18:01:44 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2022-12-15 18:01:44 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-15 18:01:44 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-12-15 18:01:44 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-15 18:01:44 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2846 ms
+2022-12-15 18:01:44 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - Configuring 2 Zeebe worker(s) of bean 'emailWorker': [ZeebeWorkerValue{name='emailWorker#handleJob', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@7be2f29a}, ZeebeWorkerValue{name='emailWorker#handleJob1', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@203d1d93}]
+2022-12-15 18:01:46 INFO  [main].[].[].[] i.c.z.s.c.ZeebeClientSpringConfiguration - Creating ZeebeClient using ZeebeClientBuilder [gatewayAddress: 127.0.0.1:26500
+jobWorkerMaxJobsActive: 32
+numJobWorkerExecutionThreads: 1
+defaultJobWorkerName: null
+defaultJobTimeout: PT5M
+defaultJobPollInterval: PT0.1S
+defaultMessageTimeToLive: PT1H
+defaultRequestTimeout: PT10S
+overrideAuthority: null
+]
+2022-12-15 18:01:46 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@7be2f29a}
+2022-12-15 18:01:46 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob1', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@203d1d93}
+2022-12-15 18:01:46 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2022-12-15 18:01:47 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7777 (http) with context path ''
+2022-12-15 18:01:47 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Started SpringElasticSearchApplication in 6.416 seconds (JVM running for 7.32)
+2022-12-15 18:01:47 WARN  [pool-4-thread-1].[].[].[] io.camunda.zeebe.client.job.worker - Worker emailWorker#handleJob failed to handle job with key 2251799813699027 of type io.camunda.zeebe:userTask, sending fail command to broker
+io.camunda.zeebe.client.api.command.InternalClientException: Failed to validate json input 'AP2' for property 'variables'
+	at io.camunda.zeebe.client.impl.ZeebeObjectMapper.validateJson(ZeebeObjectMapper.java:93)
+	at io.camunda.zeebe.client.impl.command.CommandWithVariables.variables(CommandWithVariables.java:37)
+	at io.camunda.zeebe.client.impl.command.CompleteJobCommandImpl.variables(CompleteJobCommandImpl.java:34)
+	at com.example.Spring.elasticsearch.model.EmailWorker.handleJob(EmailWorker.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.camunda.zeebe.spring.client.bean.MethodInfo.invoke(MethodInfo.java:46)
+	at io.camunda.zeebe.spring.client.jobhandling.JobHandlerInvokingSpringBeans.handle(JobHandlerInvokingSpringBeans.java:42)
+	at io.camunda.zeebe.client.impl.worker.JobRunnableFactory.executeJob(JobRunnableFactory.java:44)
+	at io.camunda.zeebe.client.impl.worker.JobRunnableFactory.lambda$create$0(JobRunnableFactory.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'AP2': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"AP2"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4703)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3076)
+	at io.camunda.zeebe.client.impl.ZeebeObjectMapper.validateJson(ZeebeObjectMapper.java:90)
+	... 17 common frames omitted
+2022-12-15 18:01:56 INFO  [http-nio-7777-exec-2].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 18:01:56 INFO  [http-nio-7777-exec-2].[].[].[] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-15 18:01:56 INFO  [http-nio-7777-exec-2].[].[].[] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-12-15 18:01:56 ERROR [http-nio-7777-exec-2].[].[].[] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "io.camunda.zeebe.client.ZeebeClient.newCreateInstanceCommand()" because "this.zeebeClient" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "io.camunda.zeebe.client.ZeebeClient.newCreateInstanceCommand()" because "this.zeebeClient" is null
+	at com.example.Spring.elasticsearch.controller.ElasticdemoController.demo(ElasticdemoController.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-12-15 18:02:43 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.2 on STS-CHN-010 with PID 27656 (D:\STS-WORKSPACE\Camunda-Poc\Camunda-User task\target\classes started by STS130 in D:\STS-WORKSPACE\Camunda-Poc\Camunda-User task)
+2022-12-15 18:02:43 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2022-12-15 18:02:45 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration' of type [io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:02:45 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:02:45 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeExpressionResolver' of type [io.camunda.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:02:45 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeDeploymentValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:02:45 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deploymentPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeDeploymentAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:02:45 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeWorkerValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:02:45 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration' of type [io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:02:45 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commandExceptionHandlingStrategy' of type [io.camunda.zeebe.spring.client.jobhandling.DefaultCommandExceptionHandlingStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:02:45 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'backoffSupplier' of type [io.camunda.zeebe.client.impl.worker.ExponentialBackoff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:02:45 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeWorkerPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeWorkerAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:02:46 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2022-12-15 18:02:46 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2022-12-15 18:02:46 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-15 18:02:46 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-12-15 18:02:46 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-15 18:02:46 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2641 ms
+2022-12-15 18:02:46 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - Configuring 2 Zeebe worker(s) of bean 'emailWorker': [ZeebeWorkerValue{name='emailWorker#handleJob1', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@350ec690}, ZeebeWorkerValue{name='emailWorker#handleJob', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@49cb1baf}]
+2022-12-15 18:02:48 INFO  [main].[].[].[] i.c.z.s.c.ZeebeClientSpringConfiguration - Creating ZeebeClient using ZeebeClientBuilder [gatewayAddress: 127.0.0.1:26500
+jobWorkerMaxJobsActive: 32
+numJobWorkerExecutionThreads: 1
+defaultJobWorkerName: null
+defaultJobTimeout: PT5M
+defaultJobPollInterval: PT0.1S
+defaultMessageTimeToLive: PT1H
+defaultRequestTimeout: PT10S
+overrideAuthority: null
+]
+2022-12-15 18:02:49 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob1', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@350ec690}
+2022-12-15 18:02:49 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@49cb1baf}
+2022-12-15 18:02:49 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2022-12-15 18:02:49 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7777 (http) with context path ''
+2022-12-15 18:02:49 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Started SpringElasticSearchApplication in 6.133 seconds (JVM running for 7.181)
+2022-12-15 18:02:53 INFO  [http-nio-7777-exec-2].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 18:02:53 INFO  [http-nio-7777-exec-2].[].[].[] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-15 18:02:53 INFO  [http-nio-7777-exec-2].[].[].[] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2022-12-15 18:02:54 WARN  [pool-4-thread-1].[].[].[] io.camunda.zeebe.client.job.worker - Worker emailWorker#handleJob failed to handle job with key 2251799813699048 of type io.camunda.zeebe:userTask, sending fail command to broker
+io.camunda.zeebe.client.api.command.InternalClientException: Failed to validate json input 'AP1' for property 'variables'
+	at io.camunda.zeebe.client.impl.ZeebeObjectMapper.validateJson(ZeebeObjectMapper.java:93)
+	at io.camunda.zeebe.client.impl.command.CommandWithVariables.variables(CommandWithVariables.java:37)
+	at io.camunda.zeebe.client.impl.command.CompleteJobCommandImpl.variables(CompleteJobCommandImpl.java:34)
+	at com.example.Spring.elasticsearch.model.EmailWorker.handleJob(EmailWorker.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.camunda.zeebe.spring.client.bean.MethodInfo.invoke(MethodInfo.java:46)
+	at io.camunda.zeebe.spring.client.jobhandling.JobHandlerInvokingSpringBeans.handle(JobHandlerInvokingSpringBeans.java:42)
+	at io.camunda.zeebe.client.impl.worker.JobRunnableFactory.executeJob(JobRunnableFactory.java:44)
+	at io.camunda.zeebe.client.impl.worker.JobRunnableFactory.lambda$create$0(JobRunnableFactory.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'AP1': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"AP1"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4703)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3076)
+	at io.camunda.zeebe.client.impl.ZeebeObjectMapper.validateJson(ZeebeObjectMapper.java:90)
+	... 17 common frames omitted
+2022-12-15 18:04:55 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.2 on STS-CHN-010 with PID 9100 (D:\STS-WORKSPACE\Camunda-Poc\Camunda-User task\target\classes started by STS130 in D:\STS-WORKSPACE\Camunda-Poc\Camunda-User task)
+2022-12-15 18:04:55 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2022-12-15 18:04:56 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration' of type [io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:04:56 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:04:56 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeExpressionResolver' of type [io.camunda.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:04:56 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeDeploymentValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:04:56 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deploymentPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeDeploymentAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:04:57 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeWorkerValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:04:57 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration' of type [io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:04:57 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commandExceptionHandlingStrategy' of type [io.camunda.zeebe.spring.client.jobhandling.DefaultCommandExceptionHandlingStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:04:57 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'backoffSupplier' of type [io.camunda.zeebe.client.impl.worker.ExponentialBackoff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:04:57 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeWorkerPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeWorkerAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:04:57 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2022-12-15 18:04:57 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2022-12-15 18:04:57 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-15 18:04:57 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-12-15 18:04:58 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-15 18:04:58 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2774 ms
+2022-12-15 18:04:58 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - Configuring 2 Zeebe worker(s) of bean 'emailWorker': [ZeebeWorkerValue{name='emailWorker#handleJob', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@34a2d6e0}, ZeebeWorkerValue{name='emailWorker#handleJob1', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@2525a5b8}]
+2022-12-15 18:05:00 INFO  [main].[].[].[] i.c.z.s.c.ZeebeClientSpringConfiguration - Creating ZeebeClient using ZeebeClientBuilder [gatewayAddress: 127.0.0.1:26500
+jobWorkerMaxJobsActive: 32
+numJobWorkerExecutionThreads: 1
+defaultJobWorkerName: null
+defaultJobTimeout: PT5M
+defaultJobPollInterval: PT0.1S
+defaultMessageTimeToLive: PT1H
+defaultRequestTimeout: PT10S
+overrideAuthority: null
+]
+2022-12-15 18:05:00 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@34a2d6e0}
+2022-12-15 18:05:00 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob1', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@2525a5b8}
+2022-12-15 18:05:00 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2022-12-15 18:05:00 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7777 (http) with context path ''
+2022-12-15 18:05:00 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Started SpringElasticSearchApplication in 6.271 seconds (JVM running for 7.185)
+2022-12-15 18:05:11 INFO  [http-nio-7777-exec-2].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 18:05:11 INFO  [http-nio-7777-exec-2].[].[].[] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-15 18:05:11 INFO  [http-nio-7777-exec-2].[].[].[] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-12-15 18:05:12 WARN  [pool-4-thread-1].[].[].[] io.camunda.zeebe.client.job.worker - Worker emailWorker#handleJob failed to handle job with key 2251799813699070 of type io.camunda.zeebe:userTask, sending fail command to broker
+io.camunda.zeebe.client.api.command.InternalClientException: Failed to validate json input 'AP1' for property 'variables'
+	at io.camunda.zeebe.client.impl.ZeebeObjectMapper.validateJson(ZeebeObjectMapper.java:93)
+	at io.camunda.zeebe.client.impl.command.CommandWithVariables.variables(CommandWithVariables.java:37)
+	at io.camunda.zeebe.client.impl.command.CompleteJobCommandImpl.variables(CompleteJobCommandImpl.java:34)
+	at com.example.Spring.elasticsearch.model.EmailWorker.handleJob(EmailWorker.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.camunda.zeebe.spring.client.bean.MethodInfo.invoke(MethodInfo.java:46)
+	at io.camunda.zeebe.spring.client.jobhandling.JobHandlerInvokingSpringBeans.handle(JobHandlerInvokingSpringBeans.java:42)
+	at io.camunda.zeebe.client.impl.worker.JobRunnableFactory.executeJob(JobRunnableFactory.java:44)
+	at io.camunda.zeebe.client.impl.worker.JobRunnableFactory.lambda$create$0(JobRunnableFactory.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'AP1': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"AP1"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4703)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3076)
+	at io.camunda.zeebe.client.impl.ZeebeObjectMapper.validateJson(ZeebeObjectMapper.java:90)
+	... 17 common frames omitted
+2022-12-15 18:07:15 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.2 on STS-CHN-010 with PID 25168 (D:\STS-WORKSPACE\Camunda-Poc\Camunda-User task\target\classes started by STS130 in D:\STS-WORKSPACE\Camunda-Poc\Camunda-User task)
+2022-12-15 18:07:15 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2022-12-15 18:07:17 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration' of type [io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:17 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:17 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeExpressionResolver' of type [io.camunda.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:17 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeDeploymentValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:17 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deploymentPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeDeploymentAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:17 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeWorkerValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:17 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration' of type [io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:17 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commandExceptionHandlingStrategy' of type [io.camunda.zeebe.spring.client.jobhandling.DefaultCommandExceptionHandlingStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:17 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'backoffSupplier' of type [io.camunda.zeebe.client.impl.worker.ExponentialBackoff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:17 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeWorkerPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeWorkerAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:18 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2022-12-15 18:07:18 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2022-12-15 18:07:18 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-15 18:07:18 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-12-15 18:07:18 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-15 18:07:18 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2966 ms
+2022-12-15 18:07:19 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - Configuring 2 Zeebe worker(s) of bean 'emailWorker': [ZeebeWorkerValue{name='emailWorker#handleJob', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@3451f01d}, ZeebeWorkerValue{name='emailWorker#handleJob1', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@72503b19}]
+2022-12-15 18:07:21 INFO  [main].[].[].[] i.c.z.s.c.ZeebeClientSpringConfiguration - Creating ZeebeClient using ZeebeClientBuilder [gatewayAddress: 127.0.0.1:26500
+jobWorkerMaxJobsActive: 32
+numJobWorkerExecutionThreads: 1
+defaultJobWorkerName: null
+defaultJobTimeout: PT5M
+defaultJobPollInterval: PT0.1S
+defaultMessageTimeToLive: PT1H
+defaultRequestTimeout: PT10S
+overrideAuthority: null
+]
+2022-12-15 18:07:21 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@3451f01d}
+2022-12-15 18:07:21 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob1', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@72503b19}
+2022-12-15 18:07:21 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2022-12-15 18:07:21 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7777 (http) with context path ''
+2022-12-15 18:07:21 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Started SpringElasticSearchApplication in 6.765 seconds (JVM running for 7.673)
+2022-12-15 18:07:31 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.2 on STS-CHN-010 with PID 25180 (D:\STS-WORKSPACE\Camunda-Poc\Camunda-User task\target\classes started by STS130 in D:\STS-WORKSPACE\Camunda-Poc\Camunda-User task)
+2022-12-15 18:07:31 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2022-12-15 18:07:33 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration' of type [io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:33 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:33 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeExpressionResolver' of type [io.camunda.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:33 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeDeploymentValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:33 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deploymentPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeDeploymentAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:33 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeWorkerValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:33 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration' of type [io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:33 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commandExceptionHandlingStrategy' of type [io.camunda.zeebe.spring.client.jobhandling.DefaultCommandExceptionHandlingStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:33 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'backoffSupplier' of type [io.camunda.zeebe.client.impl.worker.ExponentialBackoff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:33 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeWorkerPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeWorkerAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-15 18:07:34 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2022-12-15 18:07:34 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2022-12-15 18:07:34 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-15 18:07:34 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-12-15 18:07:34 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-15 18:07:34 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2584 ms
+2022-12-15 18:07:34 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - Configuring 2 Zeebe worker(s) of bean 'emailWorker': [ZeebeWorkerValue{name='emailWorker#handleJob1', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@2c2a027c}, ZeebeWorkerValue{name='emailWorker#handleJob', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@118dcbbd}]
+2022-12-15 18:07:36 INFO  [main].[].[].[] i.c.z.s.c.ZeebeClientSpringConfiguration - Creating ZeebeClient using ZeebeClientBuilder [gatewayAddress: 127.0.0.1:26500
+jobWorkerMaxJobsActive: 32
+numJobWorkerExecutionThreads: 1
+defaultJobWorkerName: null
+defaultJobTimeout: PT5M
+defaultJobPollInterval: PT0.1S
+defaultMessageTimeToLive: PT1H
+defaultRequestTimeout: PT10S
+overrideAuthority: null
+]
+2022-12-15 18:07:37 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob1', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@2c2a027c}
+2022-12-15 18:07:37 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@118dcbbd}
+2022-12-15 18:07:37 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2022-12-15 18:07:37 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7777 (http) with context path ''
+2022-12-15 18:07:37 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Started SpringElasticSearchApplication in 6.442 seconds (JVM running for 7.44)
+2022-12-15 18:07:38 INFO  [http-nio-7777-exec-2].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 18:07:38 INFO  [http-nio-7777-exec-2].[].[].[] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-15 18:07:38 INFO  [http-nio-7777-exec-2].[].[].[] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-12-15 18:07:38 WARN  [pool-4-thread-1].[].[].[] io.camunda.zeebe.client.job.worker - Worker emailWorker#handleJob failed to handle job with key 2251799813699094 of type io.camunda.zeebe:userTask, sending fail command to broker
+io.camunda.zeebe.client.api.command.InternalClientException: Failed to validate json input 'AP1' for property 'variables'
+	at io.camunda.zeebe.client.impl.ZeebeObjectMapper.validateJson(ZeebeObjectMapper.java:93)
+	at io.camunda.zeebe.client.impl.command.CommandWithVariables.variables(CommandWithVariables.java:37)
+	at io.camunda.zeebe.client.impl.command.CompleteJobCommandImpl.variables(CompleteJobCommandImpl.java:34)
+	at com.example.Spring.elasticsearch.model.EmailWorker.handleJob(EmailWorker.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.camunda.zeebe.spring.client.bean.MethodInfo.invoke(MethodInfo.java:46)
+	at io.camunda.zeebe.spring.client.jobhandling.JobHandlerInvokingSpringBeans.handle(JobHandlerInvokingSpringBeans.java:42)
+	at io.camunda.zeebe.client.impl.worker.JobRunnableFactory.executeJob(JobRunnableFactory.java:44)
+	at io.camunda.zeebe.client.impl.worker.JobRunnableFactory.lambda$create$0(JobRunnableFactory.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'AP1': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"AP1"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4703)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3076)
+	at io.camunda.zeebe.client.impl.ZeebeObjectMapper.validateJson(ZeebeObjectMapper.java:90)
+	... 17 common frames omitted
+2023-02-27 18:31:25 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.4.1 on STS-CHN-010 with PID 5408 (D:\Camunda-Workspace\Camunda-User task\target\classes started by STS130 in D:\Camunda-Workspace\Camunda-User task)
+2023-02-27 18:31:25 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2023-02-27 18:31:25 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.4.1 on STS-CHN-010 with PID 8272 (D:\Camunda-Workspace\Camunda-User task\target\classes started by STS130 in D:\Camunda-Workspace\Camunda-User task)
+2023-02-27 18:31:25 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration' of type [io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration' of type [io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeExpressionResolver' of type [io.camunda.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeDeploymentValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeExpressionResolver' of type [io.camunda.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deploymentPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeDeploymentAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeDeploymentValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeWorkerValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deploymentPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeDeploymentAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration' of type [io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeWorkerValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration' of type [io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commandExceptionHandlingStrategy' of type [io.camunda.zeebe.spring.client.jobhandling.DefaultCommandExceptionHandlingStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commandExceptionHandlingStrategy' of type [io.camunda.zeebe.spring.client.jobhandling.DefaultCommandExceptionHandlingStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'backoffSupplier' of type [io.camunda.zeebe.client.impl.worker.ExponentialBackoff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeWorkerPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeWorkerAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'backoffSupplier' of type [io.camunda.zeebe.client.impl.worker.ExponentialBackoff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeWorkerPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeWorkerAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:31:28 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2023-02-27 18:31:28 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2023-02-27 18:31:28 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:31:28 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-27 18:31:28 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:31:28 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-02-27 18:31:28 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-27 18:31:28 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-02-27 18:31:29 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-02-27 18:31:29 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3375 ms
+2023-02-27 18:31:29 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-02-27 18:31:29 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3377 ms
+2023-02-27 18:31:29 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - Configuring 2 Zeebe worker(s) of bean 'emailWorker': [ZeebeWorkerValue{name='emailWorker#handleJob1', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@252744a1}, ZeebeWorkerValue{name='emailWorker#handleJob', type='demo', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@10e5bf9c}]
+2023-02-27 18:31:29 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - Configuring 2 Zeebe worker(s) of bean 'emailWorker': [ZeebeWorkerValue{name='emailWorker#handleJob', type='demo', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@2fbe26da}, ZeebeWorkerValue{name='emailWorker#handleJob1', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@4ed15347}]
+2023-02-27 18:31:31 INFO  [main].[].[].[] i.c.z.s.c.ZeebeClientSpringConfiguration - Creating ZeebeClient using ZeebeClientBuilder [gatewayAddress: 127.0.0.1:26500
+jobWorkerMaxJobsActive: 32
+numJobWorkerExecutionThreads: 1
+defaultJobWorkerName: null
+defaultJobTimeout: PT5M
+defaultJobPollInterval: PT0.1S
+defaultMessageTimeToLive: PT1H
+defaultRequestTimeout: PT10S
+overrideAuthority: null
+]
+2023-02-27 18:31:31 INFO  [main].[].[].[] i.c.z.s.c.ZeebeClientSpringConfiguration - Creating ZeebeClient using ZeebeClientBuilder [gatewayAddress: 127.0.0.1:26500
+jobWorkerMaxJobsActive: 32
+numJobWorkerExecutionThreads: 1
+defaultJobWorkerName: null
+defaultJobTimeout: PT5M
+defaultJobPollInterval: PT0.1S
+defaultMessageTimeToLive: PT1H
+defaultRequestTimeout: PT10S
+overrideAuthority: null
+]
+2023-02-27 18:31:32 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob1', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@252744a1}
+2023-02-27 18:31:32 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob', type='demo', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@10e5bf9c}
+2023-02-27 18:31:32 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob', type='demo', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@2fbe26da}
+2023-02-27 18:31:32 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob1', type='io.camunda.zeebe:userTask', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@4ed15347}
+2023-02-27 18:31:32 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:31:32 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:31:32 WARN  [main].[].[].[] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 7777 is already in use
+2023-02-27 18:31:32 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:31:32 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-02-27 18:31:32 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:31:32 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:31:32 INFO  [main].[].[].[] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-27 18:31:32 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7777 (http) with context path ''
+2023-02-27 18:31:32 ERROR [main].[].[].[] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 7777 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 7777 or configure this application to listen on another port.
+
+2023-02-27 18:31:32 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - Started SpringElasticSearchApplication in 8.365 seconds (JVM running for 9.983)
+2023-02-27 18:31:47 WARN  [pool-4-thread-1].[].[].[] io.camunda.zeebe.client.job.worker - Worker emailWorker#handleJob1 failed to handle job with key 2251799813685263 of type io.camunda.zeebe:userTask, sending fail command to broker
+io.camunda.zeebe.client.api.command.InternalClientException: Failed to validate json input 'Activity_19lgowi' for property 'variables'
+	at io.camunda.zeebe.client.impl.ZeebeObjectMapper.validateJson(ZeebeObjectMapper.java:93)
+	at io.camunda.zeebe.client.impl.command.CommandWithVariables.variables(CommandWithVariables.java:37)
+	at io.camunda.zeebe.client.impl.command.CompleteJobCommandImpl.variables(CompleteJobCommandImpl.java:34)
+	at com.example.UserTask.model.EmailWorker.handleJob1(EmailWorker.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.camunda.zeebe.spring.client.bean.MethodInfo.invoke(MethodInfo.java:46)
+	at io.camunda.zeebe.spring.client.jobhandling.JobHandlerInvokingSpringBeans.handle(JobHandlerInvokingSpringBeans.java:42)
+	at io.camunda.zeebe.client.impl.worker.JobRunnableFactory.executeJob(JobRunnableFactory.java:44)
+	at io.camunda.zeebe.client.impl.worker.JobRunnableFactory.lambda$create$0(JobRunnableFactory.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Activity_19lgowi': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"Activity_19lgowi"; line: 1, column: 17]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4703)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3076)
+	at io.camunda.zeebe.client.impl.ZeebeObjectMapper.validateJson(ZeebeObjectMapper.java:90)
+	... 17 common frames omitted
+2023-02-27 18:33:23 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.4.1 on STS-CHN-010 with PID 12348 (D:\Camunda-Workspace\Camunda-User task\target\classes started by STS130 in D:\Camunda-Workspace\Camunda-User task)
+2023-02-27 18:33:23 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2023-02-27 18:33:25 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration' of type [io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:33:25 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:33:25 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeExpressionResolver' of type [io.camunda.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:33:25 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeDeploymentValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:33:25 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deploymentPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeDeploymentAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:33:25 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeWorkerValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:33:25 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration' of type [io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:33:25 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commandExceptionHandlingStrategy' of type [io.camunda.zeebe.spring.client.jobhandling.DefaultCommandExceptionHandlingStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:33:25 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'backoffSupplier' of type [io.camunda.zeebe.client.impl.worker.ExponentialBackoff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:33:25 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeWorkerPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeWorkerAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:33:26 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2023-02-27 18:33:26 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:33:26 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-27 18:33:26 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-02-27 18:33:26 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-02-27 18:33:26 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3029 ms
+2023-02-27 18:33:27 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - Configuring 1 Zeebe worker(s) of bean 'emailWorker': [ZeebeWorkerValue{name='emailWorker#handleJob', type='demo', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@252744a1}]
+2023-02-27 18:33:29 INFO  [main].[].[].[] i.c.z.s.c.ZeebeClientSpringConfiguration - Creating ZeebeClient using ZeebeClientBuilder [gatewayAddress: 127.0.0.1:26500
+jobWorkerMaxJobsActive: 32
+numJobWorkerExecutionThreads: 1
+defaultJobWorkerName: null
+defaultJobTimeout: PT5M
+defaultJobPollInterval: PT0.1S
+defaultMessageTimeToLive: PT1H
+defaultRequestTimeout: PT10S
+overrideAuthority: null
+]
+2023-02-27 18:33:29 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob', type='demo', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@252744a1}
+2023-02-27 18:33:29 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:33:29 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7777 (http) with context path ''
+2023-02-27 18:33:29 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - Started SpringElasticSearchApplication in 6.922 seconds (JVM running for 8.495)
+2023-02-27 18:33:44 WARN  [pool-4-thread-1].[].[].[] io.camunda.zeebe.client.job.worker - Worker emailWorker#handleJob failed to handle job with key 2251799813685293 of type demo, sending fail command to broker
+io.camunda.zeebe.client.api.command.ClientStatusException: Command 'COMPLETE' rejected with code 'NOT_FOUND': Expected to complete job with key '2251799813685292', but no such job was found
+	at io.camunda.zeebe.client.impl.ZeebeClientFutureImpl.transformExecutionException(ZeebeClientFutureImpl.java:93)
+	at io.camunda.zeebe.client.impl.ZeebeClientFutureImpl.join(ZeebeClientFutureImpl.java:50)
+	at com.example.UserTask.model.EmailWorker.handleJob(EmailWorker.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.camunda.zeebe.spring.client.bean.MethodInfo.invoke(MethodInfo.java:46)
+	at io.camunda.zeebe.spring.client.jobhandling.JobHandlerInvokingSpringBeans.handle(JobHandlerInvokingSpringBeans.java:42)
+	at io.camunda.zeebe.client.impl.worker.JobRunnableFactory.executeJob(JobRunnableFactory.java:44)
+	at io.camunda.zeebe.client.impl.worker.JobRunnableFactory.lambda$create$0(JobRunnableFactory.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: NOT_FOUND: Command 'COMPLETE' rejected with code 'NOT_FOUND': Expected to complete job with key '2251799813685292', but no such job was found
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at io.camunda.zeebe.client.impl.ZeebeClientFutureImpl.join(ZeebeClientFutureImpl.java:48)
+	... 15 common frames omitted
+Caused by: io.grpc.StatusRuntimeException: NOT_FOUND: Command 'COMPLETE' rejected with code 'NOT_FOUND': Expected to complete job with key '2251799813685292', but no such job was found
+	at io.grpc.Status.asRuntimeException(Status.java:535)
+	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:478)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:562)
+	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:70)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:743)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:722)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	... 3 common frames omitted
+2023-02-27 18:33:44 WARN  [pool-4-thread-1].[].[].[] io.camunda.zeebe.client.job.worker - Worker emailWorker#handleJob failed to handle job with key 2251799813685293 of type demo, sending fail command to broker
+io.camunda.zeebe.client.api.command.ClientStatusException: Command 'COMPLETE' rejected with code 'NOT_FOUND': Expected to complete job with key '2251799813685292', but no such job was found
+	at io.camunda.zeebe.client.impl.ZeebeClientFutureImpl.transformExecutionException(ZeebeClientFutureImpl.java:93)
+	at io.camunda.zeebe.client.impl.ZeebeClientFutureImpl.join(ZeebeClientFutureImpl.java:50)
+	at com.example.UserTask.model.EmailWorker.handleJob(EmailWorker.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.camunda.zeebe.spring.client.bean.MethodInfo.invoke(MethodInfo.java:46)
+	at io.camunda.zeebe.spring.client.jobhandling.JobHandlerInvokingSpringBeans.handle(JobHandlerInvokingSpringBeans.java:42)
+	at io.camunda.zeebe.client.impl.worker.JobRunnableFactory.executeJob(JobRunnableFactory.java:44)
+	at io.camunda.zeebe.client.impl.worker.JobRunnableFactory.lambda$create$0(JobRunnableFactory.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: NOT_FOUND: Command 'COMPLETE' rejected with code 'NOT_FOUND': Expected to complete job with key '2251799813685292', but no such job was found
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at io.camunda.zeebe.client.impl.ZeebeClientFutureImpl.join(ZeebeClientFutureImpl.java:48)
+	... 15 common frames omitted
+Caused by: io.grpc.StatusRuntimeException: NOT_FOUND: Command 'COMPLETE' rejected with code 'NOT_FOUND': Expected to complete job with key '2251799813685292', but no such job was found
+	at io.grpc.Status.asRuntimeException(Status.java:535)
+	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:478)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:562)
+	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:70)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:743)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:722)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	... 3 common frames omitted
+2023-02-27 18:33:44 WARN  [pool-4-thread-1].[].[].[] io.camunda.zeebe.client.job.worker - Worker emailWorker#handleJob failed to handle job with key 2251799813685293 of type demo, sending fail command to broker
+io.camunda.zeebe.client.api.command.ClientStatusException: Command 'COMPLETE' rejected with code 'NOT_FOUND': Expected to complete job with key '2251799813685292', but no such job was found
+	at io.camunda.zeebe.client.impl.ZeebeClientFutureImpl.transformExecutionException(ZeebeClientFutureImpl.java:93)
+	at io.camunda.zeebe.client.impl.ZeebeClientFutureImpl.join(ZeebeClientFutureImpl.java:50)
+	at com.example.UserTask.model.EmailWorker.handleJob(EmailWorker.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.camunda.zeebe.spring.client.bean.MethodInfo.invoke(MethodInfo.java:46)
+	at io.camunda.zeebe.spring.client.jobhandling.JobHandlerInvokingSpringBeans.handle(JobHandlerInvokingSpringBeans.java:42)
+	at io.camunda.zeebe.client.impl.worker.JobRunnableFactory.executeJob(JobRunnableFactory.java:44)
+	at io.camunda.zeebe.client.impl.worker.JobRunnableFactory.lambda$create$0(JobRunnableFactory.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: NOT_FOUND: Command 'COMPLETE' rejected with code 'NOT_FOUND': Expected to complete job with key '2251799813685292', but no such job was found
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at io.camunda.zeebe.client.impl.ZeebeClientFutureImpl.join(ZeebeClientFutureImpl.java:48)
+	... 15 common frames omitted
+Caused by: io.grpc.StatusRuntimeException: NOT_FOUND: Command 'COMPLETE' rejected with code 'NOT_FOUND': Expected to complete job with key '2251799813685292', but no such job was found
+	at io.grpc.Status.asRuntimeException(Status.java:535)
+	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:478)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:562)
+	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:70)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:743)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:722)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	... 3 common frames omitted
+2023-02-27 18:35:11 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.4.1 on STS-CHN-010 with PID 31740 (D:\Camunda-Workspace\Camunda-User task\target\classes started by STS130 in D:\Camunda-Workspace\Camunda-User task)
+2023-02-27 18:35:11 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2023-02-27 18:35:12 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration' of type [io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:12 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:12 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeExpressionResolver' of type [io.camunda.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:12 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeDeploymentValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:12 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deploymentPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeDeploymentAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:12 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeWorkerValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:12 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration' of type [io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:12 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commandExceptionHandlingStrategy' of type [io.camunda.zeebe.spring.client.jobhandling.DefaultCommandExceptionHandlingStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:12 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'backoffSupplier' of type [io.camunda.zeebe.client.impl.worker.ExponentialBackoff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:12 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeWorkerPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeWorkerAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:13 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2023-02-27 18:35:13 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:35:13 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-27 18:35:13 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-02-27 18:35:13 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-02-27 18:35:13 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2377 ms
+2023-02-27 18:35:13 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - Configuring 1 Zeebe worker(s) of bean 'emailWorker': [ZeebeWorkerValue{name='emailWorker#handleJob', type='demo', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@17fede14}]
+2023-02-27 18:35:15 INFO  [main].[].[].[] i.c.z.s.c.ZeebeClientSpringConfiguration - Creating ZeebeClient using ZeebeClientBuilder [gatewayAddress: 127.0.0.1:26500
+jobWorkerMaxJobsActive: 32
+numJobWorkerExecutionThreads: 1
+defaultJobWorkerName: null
+defaultJobTimeout: PT5M
+defaultJobPollInterval: PT0.1S
+defaultMessageTimeToLive: PT1H
+defaultRequestTimeout: PT10S
+overrideAuthority: null
+]
+2023-02-27 18:35:16 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob', type='demo', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@17fede14}
+2023-02-27 18:35:16 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:35:16 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7777 (http) with context path ''
+2023-02-27 18:35:16 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - Started SpringElasticSearchApplication in 6.182 seconds (JVM running for 7.478)
+2023-02-27 18:35:24 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.4.1 on STS-CHN-010 with PID 29324 (D:\Camunda-Workspace\Camunda-User task\target\classes started by STS130 in D:\Camunda-Workspace\Camunda-User task)
+2023-02-27 18:35:24 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2023-02-27 18:35:24 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.4.1 on STS-CHN-010 with PID 19216 (D:\Camunda-Workspace\Camunda-User task\target\classes started by STS130 in D:\Camunda-Workspace\Camunda-User task)
+2023-02-27 18:35:24 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2023-02-27 18:35:26 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration' of type [io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:26 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:26 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeExpressionResolver' of type [io.camunda.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:26 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeDeploymentValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:26 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deploymentPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeDeploymentAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:26 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeWorkerValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:26 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration' of type [io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:26 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commandExceptionHandlingStrategy' of type [io.camunda.zeebe.spring.client.jobhandling.DefaultCommandExceptionHandlingStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:26 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'backoffSupplier' of type [io.camunda.zeebe.client.impl.worker.ExponentialBackoff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:26 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeWorkerPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeWorkerAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:26 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration' of type [io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeExpressionResolver' of type [io.camunda.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeDeploymentValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deploymentPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeDeploymentAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeWorkerValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration' of type [io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commandExceptionHandlingStrategy' of type [io.camunda.zeebe.spring.client.jobhandling.DefaultCommandExceptionHandlingStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'backoffSupplier' of type [io.camunda.zeebe.client.impl.worker.ExponentialBackoff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:27 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeWorkerPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeWorkerAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:35:28 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2023-02-27 18:35:28 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:35:28 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-27 18:35:28 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-02-27 18:35:28 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2023-02-27 18:35:28 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:35:28 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-27 18:35:28 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-02-27 18:35:28 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-02-27 18:35:28 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3878 ms
+2023-02-27 18:35:28 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-02-27 18:35:28 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3861 ms
+2023-02-27 18:35:28 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - Configuring 1 Zeebe worker(s) of bean 'emailWorker': [ZeebeWorkerValue{name='emailWorker#handleJob', type='demo', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@106b014e}]
+2023-02-27 18:35:28 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - Configuring 1 Zeebe worker(s) of bean 'emailWorker': [ZeebeWorkerValue{name='emailWorker#handleJob', type='demo', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@662e682a}]
+2023-02-27 18:35:31 INFO  [main].[].[].[] i.c.z.s.c.ZeebeClientSpringConfiguration - Creating ZeebeClient using ZeebeClientBuilder [gatewayAddress: 127.0.0.1:26500
+jobWorkerMaxJobsActive: 32
+numJobWorkerExecutionThreads: 1
+defaultJobWorkerName: null
+defaultJobTimeout: PT5M
+defaultJobPollInterval: PT0.1S
+defaultMessageTimeToLive: PT1H
+defaultRequestTimeout: PT10S
+overrideAuthority: null
+]
+2023-02-27 18:35:31 INFO  [main].[].[].[] i.c.z.s.c.ZeebeClientSpringConfiguration - Creating ZeebeClient using ZeebeClientBuilder [gatewayAddress: 127.0.0.1:26500
+jobWorkerMaxJobsActive: 32
+numJobWorkerExecutionThreads: 1
+defaultJobWorkerName: null
+defaultJobTimeout: PT5M
+defaultJobPollInterval: PT0.1S
+defaultMessageTimeToLive: PT1H
+defaultRequestTimeout: PT10S
+overrideAuthority: null
+]
+2023-02-27 18:35:32 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob', type='demo', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@662e682a}
+2023-02-27 18:35:32 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:35:32 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob', type='demo', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@106b014e}
+2023-02-27 18:35:32 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:35:32 WARN  [main].[].[].[] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 7777 is already in use
+2023-02-27 18:35:32 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:35:32 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-02-27 18:35:32 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:35:32 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:35:32 INFO  [main].[].[].[] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-27 18:35:33 ERROR [main].[].[].[] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 7777 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 7777 or configure this application to listen on another port.
+
+2023-02-27 18:35:33 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7777 (http) with context path ''
+2023-02-27 18:35:33 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - Started SpringElasticSearchApplication in 9.646 seconds (JVM running for 11.087)
+2023-02-27 18:38:30 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.4.1 on STS-CHN-010 with PID 28584 (D:\Camunda-Workspace\Camunda-User task\target\classes started by STS130 in D:\Camunda-Workspace\Camunda-User task)
+2023-02-27 18:38:30 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2023-02-27 18:38:32 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration' of type [io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:38:32 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:38:32 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeExpressionResolver' of type [io.camunda.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:38:32 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeDeploymentValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:38:32 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deploymentPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeDeploymentAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:38:32 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeWorkerValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:38:32 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration' of type [io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:38:32 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commandExceptionHandlingStrategy' of type [io.camunda.zeebe.spring.client.jobhandling.DefaultCommandExceptionHandlingStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:38:32 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'backoffSupplier' of type [io.camunda.zeebe.client.impl.worker.ExponentialBackoff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:38:32 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeWorkerPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeWorkerAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-27 18:38:32 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2023-02-27 18:38:32 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:38:32 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-27 18:38:32 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-02-27 18:38:33 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-02-27 18:38:33 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2867 ms
+2023-02-27 18:38:33 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - Configuring 1 Zeebe worker(s) of bean 'emailWorker': [ZeebeWorkerValue{name='emailWorker#handleJob', type='demo', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@77c3c037}]
+2023-02-27 18:38:35 INFO  [main].[].[].[] i.c.z.s.c.ZeebeClientSpringConfiguration - Creating ZeebeClient using ZeebeClientBuilder [gatewayAddress: 127.0.0.1:26500
+jobWorkerMaxJobsActive: 32
+numJobWorkerExecutionThreads: 1
+defaultJobWorkerName: null
+defaultJobTimeout: PT5M
+defaultJobPollInterval: PT0.1S
+defaultMessageTimeToLive: PT1H
+defaultRequestTimeout: PT10S
+overrideAuthority: null
+]
+2023-02-27 18:38:36 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='emailWorker#handleJob', type='demo', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@77c3c037}
+2023-02-27 18:38:36 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2023-02-27 18:38:36 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7777 (http) with context path ''
+2023-02-27 18:38:36 INFO  [main].[].[].[] c.e.U.SpringElasticSearchApplication - Started SpringElasticSearchApplication in 6.896 seconds (JVM running for 8.326)
+2023-02-27 18:39:53 INFO  [http-nio-7777-exec-1].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-27 18:39:53 INFO  [http-nio-7777-exec-1].[].[].[] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-02-27 18:39:53 INFO  [http-nio-7777-exec-1].[].[].[] o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms

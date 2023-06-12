@@ -1,0 +1,15 @@
+{
+  
+    "stockMovements": [
+        {
+            "stockMovementDescription": "Free stock",
+            "accountId": 1001,
+            "quantity": 20
+        },
+        {
+            "stockMovementDescription": "Free stock",
+            "accountId": 1002,
+            "quantity": 20
+        }
+    ]
+}

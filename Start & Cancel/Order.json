@@ -1,0 +1,15 @@
+{
+  
+    "orderDetails": [
+        {
+            "date": "10-Aug-2022",
+            "orderId": "1001",
+            "quantity": 20
+        },
+        {
+            "date": "11-Aug-2022",
+            "accountId": "1002",
+            "quantity": 20
+        }
+    ]
+}

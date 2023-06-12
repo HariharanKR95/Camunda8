@@ -1,0 +1,50 @@
+2022-11-07 11:18:17 INFO  [main].[].[].[] c.C.MultipleInstance.Application - Starting Application using Java 17.0.2 on STS-CHN-010 with PID 17172 (D:\STS-WORKSPACE\Camunda-Poc\Multiple-Instance-Process\target\classes started by STS130 in D:\STS-WORKSPACE\Camunda-Poc\Multiple-Instance-Process)
+2022-11-07 11:18:17 INFO  [main].[].[].[] c.C.MultipleInstance.Application - No active profile set, falling back to 1 default profile: "default"
+2022-11-07 11:18:18 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration' of type [io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-07 11:18:18 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-07 11:18:18 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeExpressionResolver' of type [io.camunda.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-07 11:18:18 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeDeploymentValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-07 11:18:18 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deploymentPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeDeploymentAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-07 11:18:18 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeWorkerValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-07 11:18:18 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration' of type [io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-07 11:18:18 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commandExceptionHandlingStrategy' of type [io.camunda.zeebe.spring.client.jobhandling.DefaultCommandExceptionHandlingStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-07 11:18:18 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'backoffSupplier' of type [io.camunda.zeebe.client.impl.worker.ExponentialBackoff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-07 11:18:18 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeWorkerPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeWorkerAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-07 11:18:18 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2078 (http)
+2022-11-07 11:18:18 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2078"]
+2022-11-07 11:18:18 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-11-07 11:18:18 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-11-07 11:18:18 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-11-07 11:18:18 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1750 ms
+2022-11-07 11:18:19 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - Configuring 2 Zeebe worker(s) of bean 'camundaWorker': [ZeebeWorkerValue{name='Worker1', type='Worker1', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@1db87583}, ZeebeWorkerValue{name='Worker2', type='Worker2', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@7fb53256}]
+2022-11-07 11:18:20 INFO  [main].[].[].[] i.c.z.s.c.ZeebeClientSpringConfiguration - Creating ZeebeClient using ZeebeClientBuilder [gatewayAddress: 127.0.0.1:26500
+jobWorkerMaxJobsActive: 32
+numJobWorkerExecutionThreads: 500
+defaultJobWorkerName: null
+defaultJobTimeout: PT5M
+defaultJobPollInterval: PT0.1S
+defaultMessageTimeToLive: PT1H
+defaultRequestTimeout: PT10S
+overrideAuthority: null
+]
+2022-11-07 11:18:20 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='Worker1', type='Worker1', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@1db87583}
+2022-11-07 11:18:20 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='Worker2', type='Worker2', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@7fb53256}
+2022-11-07 11:18:20 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2078"]
+2022-11-07 11:18:20 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2078 (http) with context path ''
+2022-11-07 11:18:20 INFO  [main].[].[].[] c.C.MultipleInstance.Application - Started Application in 4.0 seconds (JVM running for 5.083)
+2022-11-07 11:18:37 INFO  [http-nio-2078-exec-1].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-07 11:18:37 INFO  [http-nio-2078-exec-1].[].[].[] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-11-07 11:18:37 INFO  [http-nio-2078-exec-1].[].[].[] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-11-07 11:18:37 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813685257
+2022-11-07 11:18:37 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-07 11:18:37 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......166
+2022-11-07 11:18:37 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-07 11:18:40 WARN  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3005
+2022-11-07 11:18:41 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-07 11:18:41 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813685257
+2022-11-07 11:18:41 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-07 11:18:41 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......94
+2022-11-07 11:18:41 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-07 11:18:41 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-07 11:18:41 WARN  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 18
+2022-11-07 12:08:17 INFO  [RMI TCP Connection(52)-127.0.0.1].[].[].[] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.

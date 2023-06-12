@@ -1,0 +1,15 @@
+{
+    
+    "cashMovements": [
+        {
+            "cashMovementDescription": "Deposit dollar",
+            "accountId": 1001,
+            "netAmount": 435
+        },
+        {
+            "cashMovementDescription": "Deposit dollar",
+            "accountId": 1002,
+            "netAmount": 435
+        }
+    ]
+}

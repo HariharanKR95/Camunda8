@@ -1,0 +1,15 @@
+ {
+ 
+ "pageNumber": 3,                                          
+
+    "pageSize": 30,                                             
+
+    "getAll": false,
+
+    "sortBy": "CashMovementDate",
+
+    "sortOrder": "desc",
+
+    "correlationId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+
+}

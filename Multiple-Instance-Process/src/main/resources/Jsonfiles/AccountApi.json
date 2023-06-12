@@ -1,0 +1,19 @@
+{
+    
+    "accounts": [
+        {
+            "accountId": 1001,
+            "accountNumber": "01230123",
+            "accountName": "IRA Account-201",
+            "accountType": "IRA"
+            
+        },
+        {
+            "accountId": 1002,
+            "accountNumber": "01230124",
+            "accountName": "IRA Account 282",
+            "accountType": "IRA"
+           
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "101": {
+        "id": 101,
+        "name": "Madhan",
+        "aadharNumber": 123456,
+        "pan": "SVTHP9072I",
+        "state": "TamilNadu",
+        "city": "Krishnagiri"
+    },
+    "102": {
+        "id": 102,
+        "name": "Subha",
+        "aadharNumber": 987654,
+        "pan": "DVTHP1234H",
+        "state": "TamilNadu",
+        "city": "Tenkasi"
+    },
+    "103": {
+        "id": 103,
+        "name": "Sreemol",
+        "aadharNumber": 12345,
+        "pan": "FVTHP3456K",
+        "state": "Kerala",
+        "city": "Wayanad"
+    },
+    "104": {
+        "id": 104,
+        "name": "Pratiksha",
+        "aadharNumber": 98765,
+        "pan": "SDTHP8862I",
+        "state": "Maharasthra",
+        "city": "Pune"
+    }
+}

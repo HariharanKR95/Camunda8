@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1c6qjim" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.6.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0">
+  <decision id="dmn1" name="Decision 1">
+    <decisionTable id="DecisionTable_1199h83" hitPolicy="FIRST">
+      <input id="Input_1" label="Age">
+        <inputExpression id="InputExpression_1" typeRef="number">
+          <text>Age</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="eligibleCheck" name="eligibleCheck" typeRef="string" />
+      <rule id="DecisionRule_02wsjec">
+        <inputEntry id="UnaryTests_134po92">
+          <text>&gt;60</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_05jalhx">
+          <text>"Eligible"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0q4c4ts">
+        <inputEntry id="UnaryTests_0x8klze">
+          <text>&lt;60</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_173qdwk">
+          <text>"Not Eligible"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="dmn1">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

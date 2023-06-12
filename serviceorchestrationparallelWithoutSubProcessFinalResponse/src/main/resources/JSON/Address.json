@@ -1,0 +1,24 @@
+{
+    "address": [
+        {
+            "id": 101,
+            "state": "TamilNadu",
+            "city": "Theni"
+        },
+        {
+            "id": 102,
+            "state": "TamilNadu",
+            "city": "Thiruvanmalai"
+        },
+        {
+            "id": 103,
+            "state": "TamilNadu",
+            "city": "Tuticorn"
+        },
+        {
+            "id": 104,
+            "state": "Maharasthra",
+            "city": "Pune"
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+2022-11-25 14:30:18 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.2 on STS-CHN-010 with PID 20624 (D:\STS-WORKSPACE\Wedbush\Camunda-Elastic-Search\target\classes started by STS130 in D:\STS-WORKSPACE\Wedbush\Camunda-Elastic-Search)
+2022-11-25 14:30:18 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-25 14:30:20 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2022-11-25 14:30:20 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2022-11-25 14:30:20 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-11-25 14:30:20 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-11-25 14:30:20 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-11-25 14:30:20 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1918 ms
+2022-11-25 14:30:21 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2022-11-25 14:30:21 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7777 (http) with context path ''
+2022-11-25 14:30:21 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Started SpringElasticSearchApplication in 3.714 seconds (JVM running for 4.796)
+2022-11-25 14:30:32 INFO  [RMI TCP Connection(2)-127.0.0.1].[].[].[] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2022-11-25 14:34:28 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.2 on STS-CHN-010 with PID 18572 (D:\STS-WORKSPACE\Wedbush\Camunda-Elastic-Search\target\classes started by STS130 in D:\STS-WORKSPACE\Wedbush\Camunda-Elastic-Search)
+2022-11-25 14:34:28 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-25 14:34:29 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2022-11-25 14:34:29 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2022-11-25 14:34:29 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-11-25 14:34:29 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-11-25 14:34:29 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-11-25 14:34:29 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 875 ms
+2022-11-25 14:34:30 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2022-11-25 14:34:30 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7777 (http) with context path ''
+2022-11-25 14:34:30 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Started SpringElasticSearchApplication in 2.101 seconds (JVM running for 2.715)
+2022-11-25 14:40:03 INFO  [RMI TCP Connection(9)-127.0.0.1].[].[].[] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2022-11-25 14:40:05 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.2 on STS-CHN-010 with PID 17424 (D:\STS-WORKSPACE\Wedbush\Camunda-Elastic-Search\target\classes started by STS130 in D:\STS-WORKSPACE\Wedbush\Camunda-Elastic-Search)
+2022-11-25 14:40:05 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-25 14:40:06 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2022-11-25 14:40:06 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2022-11-25 14:40:06 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-11-25 14:40:06 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-11-25 14:40:06 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-11-25 14:40:06 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 845 ms
+2022-11-25 14:40:07 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2022-11-25 14:40:07 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7777 (http) with context path ''
+2022-11-25 14:40:07 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Started SpringElasticSearchApplication in 1.948 seconds (JVM running for 2.55)
+2022-11-25 14:40:23 INFO  [http-nio-7777-exec-1].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-25 14:40:23 INFO  [http-nio-7777-exec-1].[].[].[] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-11-25 14:40:23 INFO  [http-nio-7777-exec-1].[].[].[] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-11-25 14:40:23 WARN  [http-nio-7777-exec-1].[].[].[] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'Date' for method parameter type String is not present]
+2022-11-25 14:40:52 INFO  [RMI TCP Connection(4)-127.0.0.1].[].[].[] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2022-11-25 14:40:57 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Starting SpringElasticSearchApplication using Java 17.0.2 on STS-CHN-010 with PID 12552 (D:\STS-WORKSPACE\Wedbush\Camunda-Elastic-Search\target\classes started by STS130 in D:\STS-WORKSPACE\Wedbush\Camunda-Elastic-Search)
+2022-11-25 14:40:57 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-25 14:40:58 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7777 (http)
+2022-11-25 14:40:58 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2022-11-25 14:40:58 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-11-25 14:40:58 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-11-25 14:40:58 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-11-25 14:40:58 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 873 ms
+2022-11-25 14:40:59 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2022-11-25 14:40:59 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7777 (http) with context path ''
+2022-11-25 14:40:59 INFO  [main].[].[].[] c.e.S.e.SpringElasticSearchApplication - Started SpringElasticSearchApplication in 1.953 seconds (JVM running for 2.565)
+2022-11-25 14:41:15 INFO  [http-nio-7777-exec-1].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-25 14:41:15 INFO  [http-nio-7777-exec-1].[].[].[] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-11-25 14:41:15 INFO  [http-nio-7777-exec-1].[].[].[] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-11-25 15:13:32 INFO  [RMI TCP Connection(36)-127.0.0.1].[].[].[] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.

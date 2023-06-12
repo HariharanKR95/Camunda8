@@ -1,0 +1,24 @@
+{
+    "address": [
+        {
+            "id": 101,
+            "state": "Puducherry",
+            "city": "Pondy"
+        },
+        {
+            "id": 102,
+            "state": "TamilNadu",
+            "city": "Tenkasi"
+        },
+        {
+            "id": 103,
+            "state": "TamilNadu",
+            "city": "Tirunelveli"
+        },
+        {
+            "id": 104,
+            "state": "TamilNadu",
+            "city": "Kanchipuram"
+        }
+    ]
+}

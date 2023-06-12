@@ -1,0 +1,15 @@
+{
+    
+    "paymentDetails": [
+        { 
+            "paymentMethod": "UPI",
+            "accountId": 1001,
+            "paymentStatus": "Transcation Successfull"
+        },
+      { 
+            "paymentMethod": "UPI",
+            "accountId": 1001,
+            "paymentStatus": "Transcation Successfull"
+        },
+    ]
+}

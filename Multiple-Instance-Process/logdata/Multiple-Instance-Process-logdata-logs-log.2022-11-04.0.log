@@ -1,0 +1,1433 @@
+2022-11-04 16:29:34 INFO  [main].[].[].[] c.C.MultipleInstance.Application - Starting Application using Java 17.0.2 on STS-CHN-010 with PID 18092 (D:\STS-WORKSPACE\Camunda-Poc\Multiple-Instance-Process\target\classes started by STS130 in D:\STS-WORKSPACE\Camunda-Poc\Multiple-Instance-Process)
+2022-11-04 16:29:34 INFO  [main].[].[].[] c.C.MultipleInstance.Application - No active profile set, falling back to 1 default profile: "default"
+2022-11-04 16:29:35 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration' of type [io.camunda.zeebe.spring.client.annotation.processor.AnnotationProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-04 16:29:35 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadAnnotationValueConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-04 16:29:35 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeExpressionResolver' of type [io.camunda.zeebe.spring.util.ZeebeExpressionResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-04 16:29:35 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeDeploymentValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeDeploymentValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-04 16:29:35 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deploymentPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeDeploymentAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-04 16:29:35 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'readZeebeWorkerValue' of type [io.camunda.zeebe.spring.client.annotation.value.factory.ReadZeebeWorkerValue] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-04 16:29:35 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration' of type [io.camunda.zeebe.spring.client.ZeebeClientSpringConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-04 16:29:35 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commandExceptionHandlingStrategy' of type [io.camunda.zeebe.spring.client.jobhandling.DefaultCommandExceptionHandlingStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-04 16:29:35 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'backoffSupplier' of type [io.camunda.zeebe.client.impl.worker.ExponentialBackoff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-04 16:29:35 INFO  [main].[].[].[] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'zeebeWorkerPostProcessor' of type [io.camunda.zeebe.spring.client.annotation.processor.ZeebeWorkerAnnotationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-04 16:29:36 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2078 (http)
+2022-11-04 16:29:36 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-2078"]
+2022-11-04 16:29:36 INFO  [main].[].[].[] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-11-04 16:29:36 INFO  [main].[].[].[] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-11-04 16:29:36 INFO  [main].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-11-04 16:29:36 INFO  [main].[].[].[] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2031 ms
+2022-11-04 16:29:36 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - Configuring 2 Zeebe worker(s) of bean 'camundaWorker': [ZeebeWorkerValue{name='Worker2', type='Worker2', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@11c3ff67}, ZeebeWorkerValue{name='Worker1', type='Worker1', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@4397a639}]
+2022-11-04 16:29:38 INFO  [main].[].[].[] i.c.z.s.c.ZeebeClientSpringConfiguration - Creating ZeebeClient using ZeebeClientBuilder [gatewayAddress: 127.0.0.1:26500
+jobWorkerMaxJobsActive: 32
+numJobWorkerExecutionThreads: 500
+defaultJobWorkerName: null
+defaultJobTimeout: PT5M
+defaultJobPollInterval: PT0.1S
+defaultMessageTimeToLive: PT1H
+defaultRequestTimeout: PT10S
+overrideAuthority: null
+]
+2022-11-04 16:29:38 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='Worker2', type='Worker2', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@11c3ff67}
+2022-11-04 16:29:38 INFO  [main].[].[].[] i.c.z.s.c.a.p.ZeebeWorkerAnnotationProcessor - . Starting Zeebe worker: ZeebeWorkerValue{name='Worker1', type='Worker1', timeout=-1, maxJobsActive=-1, requestTimeout=-1, pollInterval=-1, autoComplete=false, fetchVariables=[], methodInfo=io.camunda.zeebe.spring.client.bean.MethodInfo@4397a639}
+2022-11-04 16:29:38 INFO  [main].[].[].[] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-2078"]
+2022-11-04 16:29:38 INFO  [main].[].[].[] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2078 (http) with context path ''
+2022-11-04 16:29:38 INFO  [main].[].[].[] c.C.MultipleInstance.Application - Started Application in 4.959 seconds (JVM running for 5.665)
+2022-11-04 16:29:42 INFO  [http-nio-2078-exec-2].[].[].[] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-04 16:29:42 INFO  [http-nio-2078-exec-2].[].[].[] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-11-04 16:29:42 INFO  [http-nio-2078-exec-2].[].[].[] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-11-04 16:29:42 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813702997
+2022-11-04 16:29:42 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:42 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......143
+2022-11-04 16:29:42 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 WARN  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3016
+2022-11-04 16:29:45 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:45 INFO  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703005
+2022-11-04 16:29:45 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813702997
+2022-11-04 16:29:45 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......3008
+2022-11-04 16:29:45 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......67
+2022-11-04 16:29:45 INFO  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:45 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703012
+2022-11-04 16:29:45 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2918
+2022-11-04 16:29:45 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703019
+2022-11-04 16:29:45 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2824
+2022-11-04 16:29:45 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703026
+2022-11-04 16:29:45 INFO  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2733
+2022-11-04 16:29:45 INFO  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703033
+2022-11-04 16:29:45 INFO  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2660
+2022-11-04 16:29:45 INFO  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-9].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703040
+2022-11-04 16:29:45 INFO  [pool-4-thread-9].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703047
+2022-11-04 16:29:45 INFO  [pool-4-thread-9].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2580
+2022-11-04 16:29:45 INFO  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-9].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2490
+2022-11-04 16:29:45 INFO  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-8].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703054
+2022-11-04 16:29:45 INFO  [pool-4-thread-8].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703061
+2022-11-04 16:29:45 INFO  [pool-4-thread-8].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2401
+2022-11-04 16:29:45 INFO  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-8].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2310
+2022-11-04 16:29:45 INFO  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703068
+2022-11-04 16:29:45 INFO  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2218
+2022-11-04 16:29:45 INFO  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703075
+2022-11-04 16:29:45 INFO  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2142
+2022-11-04 16:29:45 INFO  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703082
+2022-11-04 16:29:45 INFO  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2036
+2022-11-04 16:29:45 INFO  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703089
+2022-11-04 16:29:45 INFO  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......1959
+2022-11-04 16:29:45 INFO  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:45 WARN  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 18
+2022-11-04 16:29:45 INFO  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703096
+2022-11-04 16:29:45 INFO  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......1858
+2022-11-04 16:29:45 INFO  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703103
+2022-11-04 16:29:45 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......1750
+2022-11-04 16:29:45 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703110
+2022-11-04 16:29:45 INFO  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......1660
+2022-11-04 16:29:45 INFO  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-17].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703117
+2022-11-04 16:29:45 INFO  [pool-4-thread-17].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-17].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......1566
+2022-11-04 16:29:45 INFO  [pool-4-thread-17].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703124
+2022-11-04 16:29:45 INFO  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......1470
+2022-11-04 16:29:45 INFO  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703131
+2022-11-04 16:29:45 INFO  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703138
+2022-11-04 16:29:45 INFO  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......1381
+2022-11-04 16:29:45 INFO  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......1276
+2022-11-04 16:29:45 INFO  [pool-4-thread-21].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703145
+2022-11-04 16:29:45 INFO  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-21].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-21].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......1167
+2022-11-04 16:29:45 INFO  [pool-4-thread-21].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-22].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703152
+2022-11-04 16:29:45 INFO  [pool-4-thread-22].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-22].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......1061
+2022-11-04 16:29:45 INFO  [pool-4-thread-22].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-24].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703159
+2022-11-04 16:29:45 INFO  [pool-4-thread-24].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-24].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......983
+2022-11-04 16:29:45 INFO  [pool-4-thread-24].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-27].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703166
+2022-11-04 16:29:45 INFO  [pool-4-thread-27].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703173
+2022-11-04 16:29:45 INFO  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......811
+2022-11-04 16:29:45 INFO  [pool-4-thread-27].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......910
+2022-11-04 16:29:45 INFO  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703180
+2022-11-04 16:29:45 INFO  [pool-4-thread-27].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703187
+2022-11-04 16:29:45 INFO  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......724
+2022-11-04 16:29:45 INFO  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......648
+2022-11-04 16:29:45 INFO  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703194
+2022-11-04 16:29:45 INFO  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......586
+2022-11-04 16:29:45 INFO  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703201
+2022-11-04 16:29:45 INFO  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......492
+2022-11-04 16:29:45 INFO  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703208
+2022-11-04 16:29:45 INFO  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......446
+2022-11-04 16:29:45 INFO  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703215
+2022-11-04 16:29:45 INFO  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......387
+2022-11-04 16:29:45 INFO  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703222
+2022-11-04 16:29:45 INFO  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:45 INFO  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:45 INFO  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......307
+2022-11-04 16:29:45 INFO  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:48 WARN  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3003
+2022-11-04 16:29:48 WARN  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3006
+2022-11-04 16:29:48 WARN  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3003
+2022-11-04 16:29:48 WARN  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3012
+2022-11-04 16:29:48 WARN  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3010
+2022-11-04 16:29:48 WARN  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3017
+2022-11-04 16:29:48 WARN  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3008
+2022-11-04 16:29:48 WARN  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3002
+2022-11-04 16:29:48 WARN  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3011
+2022-11-04 16:29:48 WARN  [pool-4-thread-8].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3011
+2022-11-04 16:29:48 WARN  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3015
+2022-11-04 16:29:48 WARN  [pool-4-thread-9].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3013
+2022-11-04 16:29:48 WARN  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3005
+2022-11-04 16:29:48 WARN  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3007
+2022-11-04 16:29:48 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 WARN  [pool-4-thread-22].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3007
+2022-11-04 16:29:48 WARN  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3012
+2022-11-04 16:29:48 WARN  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3015
+2022-11-04 16:29:48 WARN  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3009
+2022-11-04 16:29:48 WARN  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3015
+2022-11-04 16:29:48 WARN  [pool-4-thread-17].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3014
+2022-11-04 16:29:48 WARN  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3010
+2022-11-04 16:29:48 WARN  [pool-4-thread-21].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3009
+2022-11-04 16:29:48 WARN  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3004
+2022-11-04 16:29:48 WARN  [pool-4-thread-27].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3005
+2022-11-04 16:29:48 WARN  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3005
+2022-11-04 16:29:48 WARN  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3005
+2022-11-04 16:29:48 WARN  [pool-4-thread-24].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3008
+2022-11-04 16:29:48 WARN  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3002
+2022-11-04 16:29:48 WARN  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3013
+2022-11-04 16:29:48 WARN  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3016
+2022-11-04 16:29:48 WARN  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3015
+2022-11-04 16:29:48 WARN  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3017
+2022-11-04 16:29:48 INFO  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-9].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-8].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-24].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 ERROR [http-nio-2078-exec-6].[].[].[] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is io.camunda.zeebe.client.api.command.ClientStatusException: Expected to execute the command on one of the partitions, but all failed; there are no more partitions available to retry. Please try again. If the error persists contact your zeebe operator] with root cause
+io.grpc.StatusRuntimeException: RESOURCE_EXHAUSTED: Expected to execute the command on one of the partitions, but all failed; there are no more partitions available to retry. Please try again. If the error persists contact your zeebe operator
+	at io.grpc.Status.asRuntimeException(Status.java:535)
+	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:478)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:562)
+	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:70)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:743)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:722)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-11-04 16:29:48 INFO  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-27].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-22].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-17].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-21].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 INFO  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:48 ERROR [http-nio-2078-exec-7].[].[].[] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 : "{"timestamp":"2022-11-04T10:59:48.859+00:00","status":500,"error":"Internal Server Error","path":"/secondApi"}"] with root cause
+org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 : "{"timestamp":"2022-11-04T10:59:48.859+00:00","status":500,"error":"Internal Server Error","path":"/secondApi"}"
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:100)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:361)
+	at com.Camunda.MultipleInstance.Controller.CamundaController.firstApiCalled(CamundaController.java:38)
+	at jdk.internal.reflect.GeneratedMethodAccessor39.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-11-04 16:29:48 INFO  [pool-4-thread-39].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703229
+2022-11-04 16:29:48 INFO  [pool-4-thread-39].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:48 INFO  [pool-4-thread-39].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......3377
+2022-11-04 16:29:48 INFO  [pool-4-thread-39].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:48 INFO  [pool-4-thread-38].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703236
+2022-11-04 16:29:48 INFO  [pool-4-thread-38].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:48 INFO  [pool-4-thread-40].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703250
+2022-11-04 16:29:48 INFO  [pool-4-thread-40].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:48 INFO  [pool-4-thread-40].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......3254
+2022-11-04 16:29:48 INFO  [pool-4-thread-40].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:48 INFO  [pool-4-thread-38].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......3332
+2022-11-04 16:29:48 INFO  [pool-4-thread-38].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:48 INFO  [pool-4-thread-34].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703269
+2022-11-04 16:29:48 INFO  [pool-4-thread-33].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703262
+2022-11-04 16:29:48 INFO  [pool-4-thread-33].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:48 INFO  [pool-4-thread-34].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:48 INFO  [pool-4-thread-33].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......3167
+2022-11-04 16:29:48 INFO  [pool-4-thread-34].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......3090
+2022-11-04 16:29:48 INFO  [pool-4-thread-33].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:48 INFO  [pool-4-thread-34].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:48 INFO  [pool-4-thread-32].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703276
+2022-11-04 16:29:48 INFO  [pool-4-thread-32].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:48 INFO  [pool-4-thread-32].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2994
+2022-11-04 16:29:48 INFO  [pool-4-thread-32].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:48 INFO  [pool-4-thread-36].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703283
+2022-11-04 16:29:48 INFO  [pool-4-thread-36].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:48 INFO  [pool-4-thread-36].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2938
+2022-11-04 16:29:48 INFO  [pool-4-thread-36].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:48 INFO  [pool-4-thread-43].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703290
+2022-11-04 16:29:48 INFO  [pool-4-thread-43].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:48 INFO  [pool-4-thread-43].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2846
+2022-11-04 16:29:48 INFO  [pool-4-thread-43].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:48 INFO  [pool-4-thread-45].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703297
+2022-11-04 16:29:48 INFO  [pool-4-thread-45].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:48 INFO  [pool-4-thread-45].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2770
+2022-11-04 16:29:48 INFO  [pool-4-thread-45].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:48 INFO  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703304
+2022-11-04 16:29:48 INFO  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:48 INFO  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2676
+2022-11-04 16:29:48 INFO  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:48 INFO  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703311
+2022-11-04 16:29:48 INFO  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:48 INFO  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2571
+2022-11-04 16:29:48 INFO  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:48 INFO  [pool-4-thread-9].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703318
+2022-11-04 16:29:48 INFO  [pool-4-thread-9].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:48 INFO  [pool-4-thread-9].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2498
+2022-11-04 16:29:48 INFO  [pool-4-thread-9].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:48 INFO  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703325
+2022-11-04 16:29:48 INFO  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:48 INFO  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2405
+2022-11-04 16:29:48 INFO  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:48 INFO  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703332
+2022-11-04 16:29:48 INFO  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:48 INFO  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2312
+2022-11-04 16:29:48 INFO  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:48 INFO  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703339
+2022-11-04 16:29:48 INFO  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:48 INFO  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2222
+2022-11-04 16:29:48 INFO  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:48 INFO  [pool-4-thread-8].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703346
+2022-11-04 16:29:48 INFO  [pool-4-thread-8].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:48 INFO  [pool-4-thread-8].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2150
+2022-11-04 16:29:48 INFO  [pool-4-thread-8].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:49 INFO  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703353
+2022-11-04 16:29:49 INFO  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2094
+2022-11-04 16:29:49 INFO  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:49 INFO  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703360
+2022-11-04 16:29:49 INFO  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2015
+2022-11-04 16:29:49 INFO  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:49 INFO  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703367
+2022-11-04 16:29:49 INFO  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......1957
+2022-11-04 16:29:49 INFO  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:49 INFO  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703374
+2022-11-04 16:29:49 INFO  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......1869
+2022-11-04 16:29:49 INFO  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:49 INFO  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703381
+2022-11-04 16:29:49 INFO  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......1781
+2022-11-04 16:29:49 INFO  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:49 INFO  [pool-4-thread-37].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703388
+2022-11-04 16:29:49 INFO  [pool-4-thread-37].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-37].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......1675
+2022-11-04 16:29:49 INFO  [pool-4-thread-37].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 1
+2022-11-04 16:29:49 INFO  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703012
+2022-11-04 16:29:49 INFO  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......361
+2022-11-04 16:29:49 INFO  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-24].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703019
+2022-11-04 16:29:49 INFO  [pool-4-thread-24].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-24].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......363
+2022-11-04 16:29:49 INFO  [pool-4-thread-24].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703005
+2022-11-04 16:29:49 INFO  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......363
+2022-11-04 16:29:49 INFO  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703026
+2022-11-04 16:29:49 INFO  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......349
+2022-11-04 16:29:49 INFO  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-27].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703040
+2022-11-04 16:29:49 INFO  [pool-4-thread-27].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-27].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......353
+2022-11-04 16:29:49 INFO  [pool-4-thread-27].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703033
+2022-11-04 16:29:49 INFO  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......357
+2022-11-04 16:29:49 INFO  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703089
+2022-11-04 16:29:49 INFO  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......356
+2022-11-04 16:29:49 INFO  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-66].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703082
+2022-11-04 16:29:49 INFO  [pool-4-thread-66].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-17].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703054
+2022-11-04 16:29:49 INFO  [pool-4-thread-17].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-17].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......362
+2022-11-04 16:29:49 INFO  [pool-4-thread-17].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-66].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......360
+2022-11-04 16:29:49 INFO  [pool-4-thread-66].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703061
+2022-11-04 16:29:49 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......364
+2022-11-04 16:29:49 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-21].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703068
+2022-11-04 16:29:49 INFO  [pool-4-thread-21].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-21].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......366
+2022-11-04 16:29:49 INFO  [pool-4-thread-21].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703047
+2022-11-04 16:29:49 INFO  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......369
+2022-11-04 16:29:49 INFO  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703075
+2022-11-04 16:29:49 INFO  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......373
+2022-11-04 16:29:49 INFO  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703096
+2022-11-04 16:29:49 INFO  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......383
+2022-11-04 16:29:49 INFO  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703110
+2022-11-04 16:29:49 INFO  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 ERROR [http-nio-2078-exec-3].[].[].[] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is io.camunda.zeebe.client.api.command.ClientStatusException: Expected to execute the command on one of the partitions, but all failed; there are no more partitions available to retry. Please try again. If the error persists contact your zeebe operator] with root cause
+io.grpc.StatusRuntimeException: RESOURCE_EXHAUSTED: Expected to execute the command on one of the partitions, but all failed; there are no more partitions available to retry. Please try again. If the error persists contact your zeebe operator
+	at io.grpc.Status.asRuntimeException(Status.java:535)
+	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:478)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:562)
+	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:70)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:743)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:722)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-11-04 16:29:49 INFO  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......370
+2022-11-04 16:29:49 INFO  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703159
+2022-11-04 16:29:49 INFO  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......369
+2022-11-04 16:29:49 INFO  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 ERROR [http-nio-2078-exec-1].[].[].[] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 : "{"timestamp":"2022-11-04T10:59:49.157+00:00","status":500,"error":"Internal Server Error","path":"/secondApi"}"] with root cause
+org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 : "{"timestamp":"2022-11-04T10:59:49.157+00:00","status":500,"error":"Internal Server Error","path":"/secondApi"}"
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:100)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:361)
+	at com.Camunda.MultipleInstance.Controller.CamundaController.firstApiCalled(CamundaController.java:38)
+	at jdk.internal.reflect.GeneratedMethodAccessor39.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-11-04 16:29:49 INFO  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703180
+2022-11-04 16:29:49 INFO  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......383
+2022-11-04 16:29:49 INFO  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703187
+2022-11-04 16:29:49 INFO  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......386
+2022-11-04 16:29:49 INFO  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-41].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703166
+2022-11-04 16:29:49 INFO  [pool-4-thread-41].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703173
+2022-11-04 16:29:49 INFO  [pool-4-thread-41].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......388
+2022-11-04 16:29:49 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-41].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......388
+2022-11-04 16:29:49 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-79].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703124
+2022-11-04 16:29:49 INFO  [pool-4-thread-79].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-79].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......394
+2022-11-04 16:29:49 INFO  [pool-4-thread-79].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-42].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703152
+2022-11-04 16:29:49 INFO  [pool-4-thread-42].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-42].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......397
+2022-11-04 16:29:49 INFO  [pool-4-thread-42].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703117
+2022-11-04 16:29:49 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......397
+2022-11-04 16:29:49 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-46].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703103
+2022-11-04 16:29:49 INFO  [pool-4-thread-46].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-46].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......398
+2022-11-04 16:29:49 INFO  [pool-4-thread-46].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-47].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703145
+2022-11-04 16:29:49 INFO  [pool-4-thread-47].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-47].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......399
+2022-11-04 16:29:49 INFO  [pool-4-thread-47].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-48].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703131
+2022-11-04 16:29:49 INFO  [pool-4-thread-48].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-48].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......400
+2022-11-04 16:29:49 INFO  [pool-4-thread-48].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-49].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703138
+2022-11-04 16:29:49 INFO  [pool-4-thread-49].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-50].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703222
+2022-11-04 16:29:49 INFO  [pool-4-thread-50].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-50].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......387
+2022-11-04 16:29:49 INFO  [pool-4-thread-50].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-49].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......402
+2022-11-04 16:29:49 INFO  [pool-4-thread-49].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-51].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703201
+2022-11-04 16:29:49 INFO  [pool-4-thread-51].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-51].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......388
+2022-11-04 16:29:49 INFO  [pool-4-thread-51].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 125
+2022-11-04 16:29:49 ERROR [http-nio-2078-exec-4].[].[].[] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is io.camunda.zeebe.client.api.command.ClientStatusException: Expected to execute the command on one of the partitions, but all failed; there are no more partitions available to retry. Please try again. If the error persists contact your zeebe operator] with root cause
+io.grpc.StatusRuntimeException: RESOURCE_EXHAUSTED: Expected to execute the command on one of the partitions, but all failed; there are no more partitions available to retry. Please try again. If the error persists contact your zeebe operator
+	at io.grpc.Status.asRuntimeException(Status.java:535)
+	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:478)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:562)
+	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:70)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:743)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:722)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-11-04 16:29:49 INFO  [pool-4-thread-24].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-24].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 130
+2022-11-04 16:29:49 INFO  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 131
+2022-11-04 16:29:49 INFO  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 131
+2022-11-04 16:29:49 ERROR [http-nio-2078-exec-2].[].[].[] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 : "{"timestamp":"2022-11-04T10:59:49.248+00:00","status":500,"error":"Internal Server Error","path":"/secondApi"}"] with root cause
+org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 : "{"timestamp":"2022-11-04T10:59:49.248+00:00","status":500,"error":"Internal Server Error","path":"/secondApi"}"
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:100)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:361)
+	at com.Camunda.MultipleInstance.Controller.CamundaController.firstApiCalled(CamundaController.java:38)
+	at jdk.internal.reflect.GeneratedMethodAccessor39.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-11-04 16:29:49 INFO  [pool-4-thread-27].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-27].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 133
+2022-11-04 16:29:49 INFO  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 128
+2022-11-04 16:29:49 INFO  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 134
+2022-11-04 16:29:49 INFO  [pool-4-thread-66].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-66].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 129
+2022-11-04 16:29:49 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 137
+2022-11-04 16:29:49 INFO  [pool-4-thread-17].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-17].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 139
+2022-11-04 16:29:49 INFO  [pool-4-thread-21].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-21].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 136
+2022-11-04 16:29:49 INFO  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 133
+2022-11-04 16:29:49 INFO  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 131
+2022-11-04 16:29:49 INFO  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 124
+2022-11-04 16:29:49 INFO  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 123
+2022-11-04 16:29:49 INFO  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 123
+2022-11-04 16:29:49 INFO  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 111
+2022-11-04 16:29:49 INFO  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 110
+2022-11-04 16:29:49 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 118
+2022-11-04 16:29:49 INFO  [pool-4-thread-42].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-42].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 114
+2022-11-04 16:29:49 INFO  [pool-4-thread-41].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-41].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 119
+2022-11-04 16:29:49 INFO  [pool-4-thread-46].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-46].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 119
+2022-11-04 16:29:49 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 121
+2022-11-04 16:29:49 INFO  [pool-4-thread-79].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-79].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 127
+2022-11-04 16:29:49 INFO  [pool-4-thread-48].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-48].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 120
+2022-11-04 16:29:49 INFO  [pool-4-thread-47].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-47].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 131
+2022-11-04 16:29:49 INFO  [pool-4-thread-50].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-50].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 129
+2022-11-04 16:29:49 INFO  [pool-4-thread-49].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-49].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 129
+2022-11-04 16:29:49 INFO  [pool-4-thread-51].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-51].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 129
+2022-11-04 16:29:49 INFO  [pool-4-thread-53].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703215
+2022-11-04 16:29:49 INFO  [pool-4-thread-53].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-90].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703208
+2022-11-04 16:29:49 INFO  [pool-4-thread-53].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......782
+2022-11-04 16:29:49 INFO  [pool-4-thread-90].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-53].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-55].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703194
+2022-11-04 16:29:49 INFO  [pool-4-thread-55].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:49 INFO  [pool-4-thread-55].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......781
+2022-11-04 16:29:49 INFO  [pool-4-thread-55].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-90].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......782
+2022-11-04 16:29:49 INFO  [pool-4-thread-90].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:49 INFO  [pool-4-thread-55].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-55].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 108
+2022-11-04 16:29:49 INFO  [pool-4-thread-53].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-53].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 118
+2022-11-04 16:29:49 INFO  [pool-4-thread-90].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:49 WARN  [pool-4-thread-90].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 118
+2022-11-04 16:29:51 WARN  [pool-4-thread-34].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3009
+2022-11-04 16:29:51 WARN  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3005
+2022-11-04 16:29:51 WARN  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3002
+2022-11-04 16:29:51 WARN  [pool-4-thread-40].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3010
+2022-11-04 16:29:51 WARN  [pool-4-thread-45].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3006
+2022-11-04 16:29:51 WARN  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3005
+2022-11-04 16:29:51 WARN  [pool-4-thread-9].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3004
+2022-11-04 16:29:51 WARN  [pool-4-thread-43].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3007
+2022-11-04 16:29:51 WARN  [pool-4-thread-33].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3009
+2022-11-04 16:29:51 WARN  [pool-4-thread-32].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3008
+2022-11-04 16:29:51 WARN  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3003
+2022-11-04 16:29:51 WARN  [pool-4-thread-38].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3010
+2022-11-04 16:29:51 WARN  [pool-4-thread-36].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3008
+2022-11-04 16:29:51 WARN  [pool-4-thread-39].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3011
+2022-11-04 16:29:52 WARN  [pool-4-thread-8].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3007
+2022-11-04 16:29:52 WARN  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3012
+2022-11-04 16:29:52 WARN  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3002
+2022-11-04 16:29:52 WARN  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3006
+2022-11-04 16:29:52 WARN  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3003
+2022-11-04 16:29:52 WARN  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3012
+2022-11-04 16:29:52 WARN  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3015
+2022-11-04 16:29:52 WARN  [pool-4-thread-37].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3010
+2022-11-04 16:29:52 INFO  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-39].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-36].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-38].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-32].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-33].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-43].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-40].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-9].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-45].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-34].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-8].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-37].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:52 INFO  [pool-4-thread-56].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703395
+2022-11-04 16:29:52 INFO  [pool-4-thread-56].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-56].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4737
+2022-11-04 16:29:52 INFO  [pool-4-thread-56].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-57].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703402
+2022-11-04 16:29:52 INFO  [pool-4-thread-57].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-57].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4662
+2022-11-04 16:29:52 INFO  [pool-4-thread-57].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-58].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703409
+2022-11-04 16:29:52 INFO  [pool-4-thread-58].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-58].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4568
+2022-11-04 16:29:52 INFO  [pool-4-thread-58].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-95].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703416
+2022-11-04 16:29:52 INFO  [pool-4-thread-95].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-95].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4508
+2022-11-04 16:29:52 INFO  [pool-4-thread-95].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-62].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703423
+2022-11-04 16:29:52 INFO  [pool-4-thread-62].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-62].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4415
+2022-11-04 16:29:52 INFO  [pool-4-thread-62].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-97].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703430
+2022-11-04 16:29:52 INFO  [pool-4-thread-97].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-97].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4362
+2022-11-04 16:29:52 INFO  [pool-4-thread-97].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-98].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703437
+2022-11-04 16:29:52 INFO  [pool-4-thread-98].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-98].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4277
+2022-11-04 16:29:52 INFO  [pool-4-thread-98].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-63].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703444
+2022-11-04 16:29:52 INFO  [pool-4-thread-63].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-63].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4218
+2022-11-04 16:29:52 INFO  [pool-4-thread-63].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-22].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703451
+2022-11-04 16:29:52 INFO  [pool-4-thread-22].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-22].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4154
+2022-11-04 16:29:52 INFO  [pool-4-thread-22].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-67].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703458
+2022-11-04 16:29:52 INFO  [pool-4-thread-67].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-67].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4065
+2022-11-04 16:29:52 INFO  [pool-4-thread-67].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-64].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703465
+2022-11-04 16:29:52 INFO  [pool-4-thread-64].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-64].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......3955
+2022-11-04 16:29:52 INFO  [pool-4-thread-64].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-65].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703472
+2022-11-04 16:29:52 INFO  [pool-4-thread-65].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-65].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......3864
+2022-11-04 16:29:52 INFO  [pool-4-thread-65].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-68].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703479
+2022-11-04 16:29:52 INFO  [pool-4-thread-68].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-68].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......3772
+2022-11-04 16:29:52 INFO  [pool-4-thread-68].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-104].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703486
+2022-11-04 16:29:52 INFO  [pool-4-thread-104].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-104].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......3679
+2022-11-04 16:29:52 INFO  [pool-4-thread-104].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-106].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703493
+2022-11-04 16:29:52 INFO  [pool-4-thread-106].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-106].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......3605
+2022-11-04 16:29:52 INFO  [pool-4-thread-106].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-71].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703500
+2022-11-04 16:29:52 INFO  [pool-4-thread-71].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-71].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......3523
+2022-11-04 16:29:52 INFO  [pool-4-thread-71].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-72].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703507
+2022-11-04 16:29:52 INFO  [pool-4-thread-72].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-72].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......3435
+2022-11-04 16:29:52 INFO  [pool-4-thread-72].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-73].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703700
+2022-11-04 16:29:52 INFO  [pool-4-thread-73].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-73].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......3198
+2022-11-04 16:29:52 INFO  [pool-4-thread-73].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-110].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703801
+2022-11-04 16:29:52 INFO  [pool-4-thread-110].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-110].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2821
+2022-11-04 16:29:52 INFO  [pool-4-thread-110].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-75].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703806
+2022-11-04 16:29:52 INFO  [pool-4-thread-75].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-75].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2624
+2022-11-04 16:29:52 INFO  [pool-4-thread-75].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-107].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703824
+2022-11-04 16:29:52 INFO  [pool-4-thread-107].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-107].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2426
+2022-11-04 16:29:52 INFO  [pool-4-thread-107].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-108].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703834
+2022-11-04 16:29:52 INFO  [pool-4-thread-108].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-108].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......2350
+2022-11-04 16:29:52 INFO  [pool-4-thread-108].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:52 INFO  [pool-4-thread-44].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703311
+2022-11-04 16:29:52 INFO  [pool-4-thread-44].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-115].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703229
+2022-11-04 16:29:52 INFO  [pool-4-thread-115].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-44].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......252
+2022-11-04 16:29:52 INFO  [pool-4-thread-44].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-115].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......253
+2022-11-04 16:29:52 INFO  [pool-4-thread-115].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-82].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703283
+2022-11-04 16:29:52 INFO  [pool-4-thread-82].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-82].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......255
+2022-11-04 16:29:52 INFO  [pool-4-thread-82].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-83].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703236
+2022-11-04 16:29:52 INFO  [pool-4-thread-83].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-83].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......260
+2022-11-04 16:29:52 INFO  [pool-4-thread-83].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-86].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703325
+2022-11-04 16:29:52 INFO  [pool-4-thread-86].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-86].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......261
+2022-11-04 16:29:52 INFO  [pool-4-thread-86].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-87].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703276
+2022-11-04 16:29:52 INFO  [pool-4-thread-87].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-87].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......264
+2022-11-04 16:29:52 INFO  [pool-4-thread-87].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-80].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703262
+2022-11-04 16:29:52 INFO  [pool-4-thread-80].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-80].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......265
+2022-11-04 16:29:52 INFO  [pool-4-thread-80].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-81].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703290
+2022-11-04 16:29:52 INFO  [pool-4-thread-81].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-81].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......267
+2022-11-04 16:29:52 INFO  [pool-4-thread-81].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-84].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703332
+2022-11-04 16:29:52 INFO  [pool-4-thread-84].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-84].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......268
+2022-11-04 16:29:52 INFO  [pool-4-thread-84].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-85].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703250
+2022-11-04 16:29:52 INFO  [pool-4-thread-85].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-85].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......271
+2022-11-04 16:29:52 INFO  [pool-4-thread-85].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-88].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703304
+2022-11-04 16:29:52 INFO  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703318
+2022-11-04 16:29:52 INFO  [pool-4-thread-126].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703297
+2022-11-04 16:29:52 INFO  [pool-4-thread-88].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-88].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......275
+2022-11-04 16:29:52 INFO  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-126].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-88].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......275
+2022-11-04 16:29:52 INFO  [pool-4-thread-126].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......275
+2022-11-04 16:29:52 INFO  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-126].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703269
+2022-11-04 16:29:52 INFO  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......276
+2022-11-04 16:29:52 INFO  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703353
+2022-11-04 16:29:52 INFO  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......262
+2022-11-04 16:29:52 INFO  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703360
+2022-11-04 16:29:52 INFO  [pool-4-thread-127].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703346
+2022-11-04 16:29:52 INFO  [pool-4-thread-127].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-127].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......279
+2022-11-04 16:29:52 INFO  [pool-4-thread-127].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......280
+2022-11-04 16:29:52 INFO  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703339
+2022-11-04 16:29:52 INFO  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......286
+2022-11-04 16:29:52 INFO  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-66].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703367
+2022-11-04 16:29:52 INFO  [pool-4-thread-66].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-66].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......293
+2022-11-04 16:29:52 INFO  [pool-4-thread-66].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703388
+2022-11-04 16:29:52 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......283
+2022-11-04 16:29:52 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-134].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703374
+2022-11-04 16:29:52 INFO  [pool-4-thread-134].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-134].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......283
+2022-11-04 16:29:52 INFO  [pool-4-thread-134].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-135].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703381
+2022-11-04 16:29:52 INFO  [pool-4-thread-135].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:52 INFO  [pool-4-thread-135].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......286
+2022-11-04 16:29:52 INFO  [pool-4-thread-135].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:52 INFO  [pool-4-thread-44].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-44].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 91
+2022-11-04 16:29:52 INFO  [pool-4-thread-115].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-115].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 98
+2022-11-04 16:29:52 INFO  [pool-4-thread-82].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-82].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 96
+2022-11-04 16:29:52 INFO  [pool-4-thread-83].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-83].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 92
+2022-11-04 16:29:52 INFO  [pool-4-thread-86].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-86].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 110
+2022-11-04 16:29:52 INFO  [pool-4-thread-81].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-81].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 108
+2022-11-04 16:29:52 INFO  [pool-4-thread-87].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-87].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 112
+2022-11-04 16:29:52 INFO  [pool-4-thread-80].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-80].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 111
+2022-11-04 16:29:52 INFO  [pool-4-thread-84].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-84].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 108
+2022-11-04 16:29:52 INFO  [pool-4-thread-85].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-85].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 106
+2022-11-04 16:29:52 INFO  [pool-4-thread-88].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-88].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 102
+2022-11-04 16:29:52 INFO  [pool-4-thread-126].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-126].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 103
+2022-11-04 16:29:52 INFO  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-23].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 102
+2022-11-04 16:29:52 INFO  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-15].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 104
+2022-11-04 16:29:52 INFO  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-26].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 105
+2022-11-04 16:29:52 INFO  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-18].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 86
+2022-11-04 16:29:52 INFO  [pool-4-thread-127].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-127].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 88
+2022-11-04 16:29:52 INFO  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-25].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 81
+2022-11-04 16:29:52 INFO  [pool-4-thread-66].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-66].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 79
+2022-11-04 16:29:52 INFO  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-3].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 77
+2022-11-04 16:29:52 INFO  [pool-4-thread-134].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-134].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 86
+2022-11-04 16:29:52 INFO  [pool-4-thread-135].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:52 WARN  [pool-4-thread-135].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 85
+2022-11-04 16:29:55 WARN  [pool-4-thread-67].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3003
+2022-11-04 16:29:55 WARN  [pool-4-thread-58].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3009
+2022-11-04 16:29:55 WARN  [pool-4-thread-95].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3008
+2022-11-04 16:29:55 WARN  [pool-4-thread-68].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3001
+2022-11-04 16:29:55 WARN  [pool-4-thread-98].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3006
+2022-11-04 16:29:55 WARN  [pool-4-thread-56].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3013
+2022-11-04 16:29:55 WARN  [pool-4-thread-64].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3002
+2022-11-04 16:29:55 WARN  [pool-4-thread-62].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3007
+2022-11-04 16:29:55 WARN  [pool-4-thread-57].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3010
+2022-11-04 16:29:55 WARN  [pool-4-thread-97].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3006
+2022-11-04 16:29:55 WARN  [pool-4-thread-104].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3004
+2022-11-04 16:29:55 WARN  [pool-4-thread-65].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3001
+2022-11-04 16:29:55 WARN  [pool-4-thread-22].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3003
+2022-11-04 16:29:55 WARN  [pool-4-thread-63].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3004
+2022-11-04 16:29:55 WARN  [pool-4-thread-106].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3002
+2022-11-04 16:29:55 WARN  [pool-4-thread-108].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3008
+2022-11-04 16:29:55 WARN  [pool-4-thread-72].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3012
+2022-11-04 16:29:55 WARN  [pool-4-thread-110].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3010
+2022-11-04 16:29:55 WARN  [pool-4-thread-73].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3011
+2022-11-04 16:29:55 WARN  [pool-4-thread-107].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3008
+2022-11-04 16:29:55 WARN  [pool-4-thread-71].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3013
+2022-11-04 16:29:55 WARN  [pool-4-thread-75].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3009
+2022-11-04 16:29:55 INFO  [pool-4-thread-95].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-56].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-58].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-68].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-62].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-67].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-98].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-64].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-97].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-65].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-104].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-22].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-63].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-106].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-57].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-108].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-73].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-72].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-75].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-107].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-110].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-71].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703841
+2022-11-04 16:29:55 INFO  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......5522
+2022-11-04 16:29:55 INFO  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703848
+2022-11-04 16:29:55 INFO  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......5445
+2022-11-04 16:29:55 INFO  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703855
+2022-11-04 16:29:55 INFO  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......5339
+2022-11-04 16:29:55 INFO  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703862
+2022-11-04 16:29:55 INFO  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......5250
+2022-11-04 16:29:55 INFO  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703869
+2022-11-04 16:29:55 INFO  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......5156
+2022-11-04 16:29:55 INFO  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703876
+2022-11-04 16:29:55 INFO  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......5081
+2022-11-04 16:29:55 INFO  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703883
+2022-11-04 16:29:55 INFO  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4990
+2022-11-04 16:29:55 INFO  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703890
+2022-11-04 16:29:55 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4898
+2022-11-04 16:29:55 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-42].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703897
+2022-11-04 16:29:55 INFO  [pool-4-thread-42].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-42].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4823
+2022-11-04 16:29:55 INFO  [pool-4-thread-42].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-41].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703904
+2022-11-04 16:29:55 INFO  [pool-4-thread-41].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-41].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4734
+2022-11-04 16:29:55 INFO  [pool-4-thread-41].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-89].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703911
+2022-11-04 16:29:55 INFO  [pool-4-thread-89].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-89].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4655
+2022-11-04 16:29:55 INFO  [pool-4-thread-89].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-147].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703918
+2022-11-04 16:29:55 INFO  [pool-4-thread-147].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-147].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4549
+2022-11-04 16:29:55 INFO  [pool-4-thread-147].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703925
+2022-11-04 16:29:55 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4470
+2022-11-04 16:29:55 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-79].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703932
+2022-11-04 16:29:55 INFO  [pool-4-thread-79].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-79].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4380
+2022-11-04 16:29:55 INFO  [pool-4-thread-48].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703939
+2022-11-04 16:29:55 INFO  [pool-4-thread-79].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-48].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-48].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4284
+2022-11-04 16:29:55 INFO  [pool-4-thread-48].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-47].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703946
+2022-11-04 16:29:55 INFO  [pool-4-thread-47].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-47].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4194
+2022-11-04 16:29:55 INFO  [pool-4-thread-47].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-50].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703953
+2022-11-04 16:29:55 INFO  [pool-4-thread-50].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-50].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4132
+2022-11-04 16:29:55 INFO  [pool-4-thread-50].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-151].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703960
+2022-11-04 16:29:55 INFO  [pool-4-thread-151].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-151].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......4040
+2022-11-04 16:29:55 INFO  [pool-4-thread-151].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-51].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703967
+2022-11-04 16:29:55 INFO  [pool-4-thread-51].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-51].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......3931
+2022-11-04 16:29:55 INFO  [pool-4-thread-51].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-52].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703974
+2022-11-04 16:29:55 INFO  [pool-4-thread-52].[].[].[] c.C.M.Worker.CamundaWorker - worker1 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-52].[].[].[] c.C.M.Worker.CamundaWorker - Api & Worker 1 Diff=.......3825
+2022-11-04 16:29:55 INFO  [pool-4-thread-52].[].[].[] c.C.M.Worker.CamundaWorker - Red-Alert in Worker 1
+2022-11-04 16:29:55 INFO  [pool-4-thread-54].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703416
+2022-11-04 16:29:55 INFO  [pool-4-thread-54].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-54].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......302
+2022-11-04 16:29:55 INFO  [pool-4-thread-54].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-91].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703395
+2022-11-04 16:29:55 INFO  [pool-4-thread-91].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-91].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......303
+2022-11-04 16:29:55 INFO  [pool-4-thread-91].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-92].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703409
+2022-11-04 16:29:55 INFO  [pool-4-thread-92].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-92].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......304
+2022-11-04 16:29:55 INFO  [pool-4-thread-55].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703479
+2022-11-04 16:29:55 INFO  [pool-4-thread-92].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-55].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-55].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......304
+2022-11-04 16:29:55 INFO  [pool-4-thread-55].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-53].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703458
+2022-11-04 16:29:55 INFO  [pool-4-thread-53].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-90].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703423
+2022-11-04 16:29:55 INFO  [pool-4-thread-90].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-53].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......305
+2022-11-04 16:29:55 INFO  [pool-4-thread-53].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-90].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......306
+2022-11-04 16:29:55 INFO  [pool-4-thread-90].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703437
+2022-11-04 16:29:55 INFO  [pool-4-thread-39].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703493
+2022-11-04 16:29:55 INFO  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-39].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-39].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......306
+2022-11-04 16:29:55 INFO  [pool-4-thread-39].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......308
+2022-11-04 16:29:55 INFO  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-36].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703444
+2022-11-04 16:29:55 INFO  [pool-4-thread-36].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-36].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......309
+2022-11-04 16:29:55 INFO  [pool-4-thread-36].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-38].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703451
+2022-11-04 16:29:55 INFO  [pool-4-thread-38].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-38].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......311
+2022-11-04 16:29:55 INFO  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703486
+2022-11-04 16:29:55 INFO  [pool-4-thread-38].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......309
+2022-11-04 16:29:55 INFO  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-32].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703472
+2022-11-04 16:29:55 INFO  [pool-4-thread-32].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-32].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......312
+2022-11-04 16:29:55 INFO  [pool-4-thread-32].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-33].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703430
+2022-11-04 16:29:55 INFO  [pool-4-thread-33].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-33].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......313
+2022-11-04 16:29:55 INFO  [pool-4-thread-43].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703465
+2022-11-04 16:29:55 INFO  [pool-4-thread-43].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-43].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......313
+2022-11-04 16:29:55 INFO  [pool-4-thread-43].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-33].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703402
+2022-11-04 16:29:55 INFO  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......314
+2022-11-04 16:29:55 INFO  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-40].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703834
+2022-11-04 16:29:55 INFO  [pool-4-thread-40].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-40].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......300
+2022-11-04 16:29:55 INFO  [pool-4-thread-40].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703700
+2022-11-04 16:29:55 INFO  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......301
+2022-11-04 16:29:55 INFO  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-45].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703806
+2022-11-04 16:29:55 INFO  [pool-4-thread-45].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-45].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......302
+2022-11-04 16:29:55 INFO  [pool-4-thread-34].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703507
+2022-11-04 16:29:55 INFO  [pool-4-thread-34].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-34].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......302
+2022-11-04 16:29:55 INFO  [pool-4-thread-34].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-45].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-175].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703824
+2022-11-04 16:29:55 INFO  [pool-4-thread-175].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-175].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......307
+2022-11-04 16:29:55 INFO  [pool-4-thread-175].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703500
+2022-11-04 16:29:55 INFO  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......308
+2022-11-04 16:29:55 INFO  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703801
+2022-11-04 16:29:55 INFO  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:55 INFO  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......308
+2022-11-04 16:29:55 INFO  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:55 INFO  [pool-4-thread-92].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-92].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 77
+2022-11-04 16:29:55 INFO  [pool-4-thread-91].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-91].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 79
+2022-11-04 16:29:55 INFO  [pool-4-thread-55].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-55].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 79
+2022-11-04 16:29:55 INFO  [pool-4-thread-54].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-54].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 82
+2022-11-04 16:29:55 INFO  [pool-4-thread-90].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-90].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 79
+2022-11-04 16:29:55 INFO  [pool-4-thread-53].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-53].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 80
+2022-11-04 16:29:55 INFO  [pool-4-thread-39].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-39].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 79
+2022-11-04 16:29:55 INFO  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-6].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 87
+2022-11-04 16:29:55 INFO  [pool-4-thread-36].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-36].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 87
+2022-11-04 16:29:55 INFO  [pool-4-thread-38].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-38].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 86
+2022-11-04 16:29:55 INFO  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-7].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 85
+2022-11-04 16:29:55 INFO  [pool-4-thread-32].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-32].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 85
+2022-11-04 16:29:55 INFO  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-13].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 84
+2022-11-04 16:29:55 INFO  [pool-4-thread-33].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-33].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 87
+2022-11-04 16:29:55 INFO  [pool-4-thread-40].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-40].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 100
+2022-11-04 16:29:55 INFO  [pool-4-thread-45].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-45].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 99
+2022-11-04 16:29:55 INFO  [pool-4-thread-43].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 INFO  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-43].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 105
+2022-11-04 16:29:55 WARN  [pool-4-thread-1].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 102
+2022-11-04 16:29:55 INFO  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-12].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 95
+2022-11-04 16:29:55 INFO  [pool-4-thread-34].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-34].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 102
+2022-11-04 16:29:55 INFO  [pool-4-thread-175].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-175].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 98
+2022-11-04 16:29:55 INFO  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:55 WARN  [pool-4-thread-11].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 104
+2022-11-04 16:29:58 WARN  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3000
+2022-11-04 16:29:58 WARN  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3001
+2022-11-04 16:29:58 WARN  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3001
+2022-11-04 16:29:58 WARN  [pool-4-thread-50].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3009
+2022-11-04 16:29:58 WARN  [pool-4-thread-48].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3010
+2022-11-04 16:29:58 WARN  [pool-4-thread-42].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3013
+2022-11-04 16:29:58 WARN  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3014
+2022-11-04 16:29:58 WARN  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3015
+2022-11-04 16:29:58 WARN  [pool-4-thread-51].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3008
+2022-11-04 16:29:58 WARN  [pool-4-thread-151].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3008
+2022-11-04 16:29:58 WARN  [pool-4-thread-52].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3007
+2022-11-04 16:29:58 WARN  [pool-4-thread-47].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3010
+2022-11-04 16:29:58 WARN  [pool-4-thread-79].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3010
+2022-11-04 16:29:58 WARN  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3011
+2022-11-04 16:29:58 WARN  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3016
+2022-11-04 16:29:58 WARN  [pool-4-thread-89].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3012
+2022-11-04 16:29:58 WARN  [pool-4-thread-41].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3012
+2022-11-04 16:29:58 WARN  [pool-4-thread-147].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3011
+2022-11-04 16:29:58 WARN  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3014
+2022-11-04 16:29:58 WARN  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 Total_Response_Time(ms): 3014
+2022-11-04 16:29:58 INFO  [pool-4-thread-19].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-35].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-20].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-50].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-147].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-28].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-4].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-41].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-89].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-51].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-2].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-30].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-79].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-47].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-52].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-151].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-48].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-29].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-31].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-42].[].[].[] c.C.M.Worker.CamundaWorker - worker 1 completed
+2022-11-04 16:29:58 INFO  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703848
+2022-11-04 16:29:58 INFO  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......247
+2022-11-04 16:29:58 INFO  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703855
+2022-11-04 16:29:58 INFO  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......248
+2022-11-04 16:29:58 INFO  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-37].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703841
+2022-11-04 16:29:58 INFO  [pool-4-thread-37].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-37].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......249
+2022-11-04 16:29:58 INFO  [pool-4-thread-37].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703953
+2022-11-04 16:29:58 INFO  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......235
+2022-11-04 16:29:58 INFO  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703918
+2022-11-04 16:29:58 INFO  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......236
+2022-11-04 16:29:58 INFO  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-93].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703883
+2022-11-04 16:29:58 INFO  [pool-4-thread-93].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-93].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......238
+2022-11-04 16:29:58 INFO  [pool-4-thread-93].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-94].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703925
+2022-11-04 16:29:58 INFO  [pool-4-thread-94].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-94].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......239
+2022-11-04 16:29:58 INFO  [pool-4-thread-94].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-59].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703904
+2022-11-04 16:29:58 INFO  [pool-4-thread-59].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-59].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......239
+2022-11-04 16:29:58 INFO  [pool-4-thread-59].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-187].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703911
+2022-11-04 16:29:58 INFO  [pool-4-thread-187].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-187].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......241
+2022-11-04 16:29:58 INFO  [pool-4-thread-187].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-60].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703967
+2022-11-04 16:29:58 INFO  [pool-4-thread-60].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-60].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......242
+2022-11-04 16:29:58 INFO  [pool-4-thread-60].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-61].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703890
+2022-11-04 16:29:58 INFO  [pool-4-thread-61].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-61].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......246
+2022-11-04 16:29:58 INFO  [pool-4-thread-61].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-190].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703862
+2022-11-04 16:29:58 INFO  [pool-4-thread-190].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-190].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......245
+2022-11-04 16:29:58 INFO  [pool-4-thread-190].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-100].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703932
+2022-11-04 16:29:58 INFO  [pool-4-thread-100].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-100].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......249
+2022-11-04 16:29:58 INFO  [pool-4-thread-100].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-192].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703946
+2022-11-04 16:29:58 INFO  [pool-4-thread-192].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-192].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......250
+2022-11-04 16:29:58 INFO  [pool-4-thread-192].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-102].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703974
+2022-11-04 16:29:58 INFO  [pool-4-thread-102].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-102].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......254
+2022-11-04 16:29:58 INFO  [pool-4-thread-103].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703960
+2022-11-04 16:29:58 INFO  [pool-4-thread-102].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-103].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-103].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......254
+2022-11-04 16:29:58 INFO  [pool-4-thread-103].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-69].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703939
+2022-11-04 16:29:58 INFO  [pool-4-thread-69].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-69].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......254
+2022-11-04 16:29:58 INFO  [pool-4-thread-69].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-105].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703876
+2022-11-04 16:29:58 INFO  [pool-4-thread-105].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-105].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......255
+2022-11-04 16:29:58 INFO  [pool-4-thread-105].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-70].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703897
+2022-11-04 16:29:58 INFO  [pool-4-thread-70].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-70].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......258
+2022-11-04 16:29:58 INFO  [pool-4-thread-70].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-198].[].[].[] c.C.M.Worker.CamundaWorker - ProccessId=.....2251799813703869
+2022-11-04 16:29:58 INFO  [pool-4-thread-198].[].[].[] c.C.M.Worker.CamundaWorker - worker2 Started
+2022-11-04 16:29:58 INFO  [pool-4-thread-198].[].[].[] c.C.M.Worker.CamundaWorker - Worker1 & Worker2 Diff=.......259
+2022-11-04 16:29:58 INFO  [pool-4-thread-198].[].[].[] c.C.M.Worker.CamundaWorker - Green-Alert in Worker 2
+2022-11-04 16:29:58 INFO  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-10].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 66
+2022-11-04 16:29:58 INFO  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-14].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 78
+2022-11-04 16:29:58 INFO  [pool-4-thread-37].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-37].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 76
+2022-11-04 16:29:58 INFO  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-5].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 75
+2022-11-04 16:29:58 INFO  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-16].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 79
+2022-11-04 16:29:58 INFO  [pool-4-thread-93].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-93].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 77
+2022-11-04 16:29:58 INFO  [pool-4-thread-94].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-94].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 76
+2022-11-04 16:29:58 INFO  [pool-4-thread-59].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-59].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 82
+2022-11-04 16:29:58 INFO  [pool-4-thread-187].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-187].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 81
+2022-11-04 16:29:58 INFO  [pool-4-thread-60].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-60].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 80
+2022-11-04 16:29:58 INFO  [pool-4-thread-61].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-61].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 80
+2022-11-04 16:29:58 INFO  [pool-4-thread-190].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-190].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 81
+2022-11-04 16:29:58 INFO  [pool-4-thread-100].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-100].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 81
+2022-11-04 16:29:58 INFO  [pool-4-thread-192].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-192].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 86
+2022-11-04 16:29:58 INFO  [pool-4-thread-102].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-102].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 83
+2022-11-04 16:29:58 INFO  [pool-4-thread-103].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-103].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 84
+2022-11-04 16:29:58 INFO  [pool-4-thread-69].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-69].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 85
+2022-11-04 16:29:58 INFO  [pool-4-thread-105].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-105].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 85
+2022-11-04 16:29:58 INFO  [pool-4-thread-70].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-70].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 82
+2022-11-04 16:29:58 INFO  [pool-4-thread-198].[].[].[] c.C.M.Worker.CamundaWorker - worker 2 completed
+2022-11-04 16:29:58 WARN  [pool-4-thread-198].[].[].[] c.C.M.Worker.CamundaWorker - Worker2 Total_Response_Time(ms): 90
+2022-11-04 20:12:52 WARN  [grpc-default-executor-22].[].[].[] io.camunda.zeebe.client.job.poller - Failed to activate jobs for worker Worker1 and job type Worker1
+io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 19.999817700s. [closed=[], open=[[remote_addr=/127.0.0.1:26500]]]
+	at io.grpc.Status.asRuntimeException(Status.java:535)
+	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:478)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:562)
+	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:70)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:743)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:722)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
